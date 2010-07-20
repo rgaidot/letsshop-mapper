@@ -7,6 +7,9 @@ module LetsShopMapper
         attr_reader :title
         attr_reader :description
         attr_reader :price
+        attr_reader :currency
+        attr_reader :discount
+        attr_reader :older_price
         attr_reader :thumb
         attr_reader :supplier
         attr_reader :facets
@@ -34,12 +37,14 @@ module LetsShopMapper
           if (e = entry.elements['description']) && e.text
             @description = e.text
           end
-
           if (e = entry.elements['letsshop/thumb'])
-            @thumb = e.attribute('thumbnail').value
+            @thumb = e.text
           end
           if (e = entry.elements['letsshop/price']) && e.text
             @price = e.text
+            @currency = e.attributes.get_attribute("currency").value
+            @discount = e.attributes.get_attribute("discount").value
+            @older = e.attributes.get_attribute("older").value
           end
           entry.each_element('Query') do |f|
             if !f.attributes.get_attribute("title").value.index("supplier:").nil?
@@ -66,7 +71,8 @@ module LetsShopMapper
           s += "Title: #{@title}\n"
           s += "Description: #{@description}\n"
           s += "Thumbnail: #{@thumb}\n"
-          s += "Price: #{@price}\n"
+          s += "Price: #{@price} #{@currency}\n"
+          s += "Discount: #{@older} (#{@discount})\n"
           s += "Supplier: #{@supplier}\n"
           s += "----------------------------------\n"
           @facets.each { |i| s += i.to_s(localtime) }
