@@ -1,0 +1,11 @@
+development:
+  server: 
+  private_key: 
+
+test:
+  server: 
+  private_key: 
+
+production:
+  server: 
+  private_key: 

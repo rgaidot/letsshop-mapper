@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:letsshop="http://letsshop.happun.com/ns/" xml:lang="en-US" version="2.0" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns="http://www.w3.org/2005/Atom">
+  <title>Search: </title>
+  <link href="http://letsshop.dev.happun.com/search/82842d494583280b940b208664f34014"/>
+  <author>
+    <name>Let's Shop, happun.com</name>
+  </author>
+  <startIndex>0</startIndex>
+  <itemsPerPage>2</itemsPerPage>
+  <totalResults>228903</totalResults>
+  <Query searchTerms="" role="request"/>
+  <Query searchTerms=" refine:'universe:mode'" title="universe:mode" role="subset" nhits="225709" selected="false"/>
+  <Query searchTerms=" refine:'gender:femme'" title="gender:femme" role="subset" nhits="133644" selected="false"/>
+  <Query searchTerms=" refine:'gender:homme'" title="gender:homme" role="subset" nhits="59232" selected="false"/>
+  <Query searchTerms=" refine:'supplier:Yoox'" title="supplier:Yoox" role="subset" nhits="58738" selected="false"/>
+  <Query searchTerms=" refine:'category:chaussure'" title="category:chaussure" role="subset" nhits="54170" selected="false"/>
+  <Query searchTerms=" refine:'universe:decoration'" title="universe:decoration" role="subset" nhits="41588" selected="false"/>
+  <Query searchTerms=" refine:'color:noir'" title="color:noir" role="subset" nhits="38399" selected="false"/>
+  <Query searchTerms=" refine:'gender:enfant'" title="gender:enfant" role="subset" nhits="35081" selected="false"/>
+  <Query searchTerms=" refine:'category:top'" title="category:top" role="subset" nhits="32747" selected="false"/>
+  <Query searchTerms=" refine:'category:pantalon'" title="category:pantalon" role="subset" nhits="31777" selected="false"/>
+  <Query searchTerms=" refine:'supplier:Modz'" title="supplier:Modz" role="subset" nhits="26693" selected="false"/>
+  <Query searchTerms=" refine:'color:bleu'" title="color:bleu" role="subset" nhits="25657" selected="false"/>
+  <Query searchTerms=" refine:'color:blanc'" title="color:blanc" role="subset" nhits="24505" selected="false"/>
+  <Query searchTerms=" refine:'color:gris'" title="color:gris" role="subset" nhits="22306" selected="false"/>
+  <Query searchTerms=" refine:'category:tshirt'" title="category:tshirt" role="subset" nhits="21743" selected="false"/>
+  <Query searchTerms=" refine:'supplier:Sarenza'" title="supplier:Sarenza" role="subset" nhits="17642" selected="false"/>
+  <Query searchTerms=" refine:'supplier:BrandAlley'" title="supplier:BrandAlley" role="subset" nhits="16812" selected="false"/>
+  <Query searchTerms=" refine:'brand:'" title="brand:" role="subset" nhits="16184" selected="false"/>
+  <Query searchTerms=" refine:'category:chemise'" title="category:chemise" role="subset" nhits="14546" selected="false"/>
+  <Query searchTerms=" refine:'supplier:La Redoute'" title="supplier:La Redoute" role="subset" nhits="14290" selected="false"/>
+  <Query searchTerms=" refine:'color:marron'" title="color:marron" role="subset" nhits="13694" selected="false"/>
+  <Query searchTerms=" refine:'category:manteaux'" title="category:manteaux" role="subset" nhits="13250" selected="false"/>
+  <Query searchTerms=" refine:'category:lingerie'" title="category:lingerie" role="subset" nhits="12311" selected="false"/>
+  <Query searchTerms=" refine:'supplier:Maison de valerie'" title="supplier:Maison de valerie" role="subset" nhits="12077" selected="false"/>
+  <Query searchTerms=" refine:'supplier:3Suisses'" title="supplier:3Suisses" role="subset" nhits="11026" selected="false"/>
+  <Query searchTerms=" refine:'category:pull'" title="category:pull" role="subset" nhits="10554" selected="false"/>
+  <Query searchTerms=" refine:'category:sandale'" title="category:sandale" role="subset" nhits="10381" selected="false"/>
+  <Query searchTerms=" refine:'gender:fille'" title="gender:fille" role="subset" nhits="10362" selected="false"/>
+  <Query searchTerms=" refine:'category:robe'" title="category:robe" role="subset" nhits="10272" selected="false"/>
+  <Query searchTerms=" refine:'gender:bebe'" title="gender:bebe" role="subset" nhits="10144" selected="false"/>
+  <Query searchTerms=" refine:'color:rose'" title="color:rose" role="subset" nhits="10041" selected="false"/>
+  <Query searchTerms=" refine:'category:jean'" title="category:jean" role="subset" nhits="9964" selected="false"/>
+  <Query searchTerms=" refine:'brand:n/a'" title="brand:n/a" role="subset" nhits="9883" selected="false"/>
+  <Query searchTerms=" refine:'color:beige'" title="color:beige" role="subset" nhits="9877" selected="false"/>
+  <Query searchTerms=" refine:'category:basket'" title="category:basket" role="subset" nhits="9626" selected="false"/>
+  <Query searchTerms=" refine:'color:rouge'" title="color:rouge" role="subset" nhits="9551" selected="false"/>
+  <Query searchTerms=" refine:'supplier:Spartoo.com'" title="supplier:Spartoo.com" role="subset" nhits="9307" selected="false"/>
+  <Query searchTerms=" refine:'supplier:Dress-for-less.fr'" title="supplier:Dress-for-less.fr" role="subset" nhits="9277" selected="false"/>
+  <Query searchTerms=" refine:'category:accessoire'" title="category:accessoire" role="subset" nhits="9129" selected="false"/>
+  <Query searchTerms=" refine:'color:vert'" title="color:vert" role="subset" nhits="9125" selected="false"/>
+  <Query searchTerms=" refine:'category:linge de maison'" title="category:linge de maison" role="subset" nhits="8976" selected="false"/>
+  <Query searchTerms=" refine:'color:violet'" title="color:violet" role="subset" nhits="7946" selected="false"/>
+  <Query searchTerms=" refine:'category:veste'" title="category:veste" role="subset" nhits="7904" selected="false"/>
+  <Query searchTerms=" refine:'category:tshirt manches courtes'" title="category:tshirt manches courtes" role="subset" nhits="7733" selected="false"/>
+  <Query searchTerms=" refine:'category:bijoux'" title="category:bijoux" role="subset" nhits="7622" selected="false"/>
+  <Query searchTerms=" refine:'category:sac'" title="category:sac" role="subset" nhits="6798" selected="false"/>
+  <Query searchTerms=" refine:'category:meuble'" title="category:meuble" role="subset" nhits="6776" selected="false"/>
+  <Query searchTerms=" refine:'supplier:Forzieri'" title="supplier:Forzieri" role="subset" nhits="6560" selected="false"/>
+  <Query searchTerms=" refine:'gender:garcon'" title="gender:garcon" role="subset" nhits="5930" selected="false"/>
+  <Query searchTerms=" refine:'brand:nike'" title="brand:nike" role="subset" nhits="5506" selected="false"/>
+  <Query searchTerms=" refine:'category:jupe'" title="category:jupe" role="subset" nhits="5462" selected="false"/>
+  <Query searchTerms=" refine:'category:gilet'" title="category:gilet" role="subset" nhits="5364" selected="false"/>
+  <Query searchTerms=" refine:'supplier:BHV'" title="supplier:BHV" role="subset" nhits="5250" selected="false"/>
+  <Query searchTerms=" refine:'supplier:Oclio'" title="supplier:Oclio" role="subset" nhits="5157" selected="false"/>
+  <Query searchTerms=" refine:'category:linge de lit'" title="category:linge de lit" role="subset" nhits="4995" selected="false"/>
+  <Query searchTerms=" refine:'category:escarpin'" title="category:escarpin" role="subset" nhits="4891" selected="false"/>
+  <Query searchTerms=" refine:'supplier:Daxon'" title="supplier:Daxon" role="subset" nhits="4844" selected="false"/>
+  <Query searchTerms=" refine:'universe:beaute'" title="universe:beaute" role="subset" nhits="4775" selected="false"/>
+  <Query searchTerms=" refine:'category:tshirt manches longues'" title="category:tshirt manches longues" role="subset" nhits="4546" selected="false"/>
+  <Query searchTerms=" refine:'supplier:Bonprix.fr'" title="supplier:Bonprix.fr" role="subset" nhits="4335" selected="false"/>
+  <Query searchTerms=" refine:'supplier:Galeries Lafayette'" title="supplier:Galeries Lafayette" role="subset" nhits="4321" selected="false"/>
+  <Query searchTerms=" refine:'category:ballerine'" title="category:ballerine" role="subset" nhits="4293" selected="false"/>
+  <Query searchTerms=" refine:'category:canape et fauteuil'" title="category:canape et fauteuil" role="subset" nhits="4292" selected="false"/>
+  <Query searchTerms=" refine:'brand:kiabi'" title="brand:kiabi" role="subset" nhits="4283" selected="false"/>
+  <Query searchTerms=" refine:'supplier:Kiabi'" title="supplier:Kiabi" role="subset" nhits="4283" selected="false"/>
+  <Query searchTerms=" refine:'supplier:AchatVIP'" title="supplier:AchatVIP" role="subset" nhits="4136" selected="false"/>
+  <Query searchTerms=" refine:'brand:tommy hilfiger'" title="brand:tommy hilfiger" role="subset" nhits="4076" selected="false"/>
+  <Query searchTerms=" refine:'category:botte'" title="category:botte" role="subset" nhits="4028" selected="false"/>
+  <Query searchTerms=" refine:'supplier:Nike'" title="supplier:Nike" role="subset" nhits="3885" selected="false"/>
+  <Query searchTerms=" refine:'category:robe courte'" title="category:robe courte" role="subset" nhits="3825" selected="false"/>
+  <Query searchTerms=" refine:'category:puericulture'" title="category:puericulture" role="subset" nhits="3724" selected="false"/>
+  <Query searchTerms=" refine:'color:jaune'" title="color:jaune" role="subset" nhits="3599" selected="false"/>
+  <Query searchTerms=" refine:'category:literie'" title="category:literie" role="subset" nhits="3460" selected="false"/>
+  <Query searchTerms=" refine:'category:sweat'" title="category:sweat" role="subset" nhits="3364" selected="false"/>
+  <Query searchTerms=" refine:'supplier:Decoclico'" title="supplier:Decoclico" role="subset" nhits="3329" selected="false"/>
+  <Query searchTerms=" refine:'category:art de la table'" title="category:art de la table" role="subset" nhits="3324" selected="false"/>
+  <Query searchTerms=" refine:'supplier:Jef Chaussures'" title="supplier:Jef Chaussures" role="subset" nhits="3302" selected="false"/>
+  <Query searchTerms=" refine:'category:ceinture'" title="category:ceinture" role="subset" nhits="3208" selected="false"/>
+  <Query searchTerms=" refine:'category:polo'" title="category:polo" role="subset" nhits="3201" selected="false"/>
+  <Query searchTerms=" refine:'category:soutien-gorge'" title="category:soutien-gorge" role="subset" nhits="3179" selected="false"/>
+  <Query searchTerms=" refine:'supplier:Melijoe'" title="supplier:Melijoe" role="subset" nhits="3160" selected="false"/>
+  <Query searchTerms=" refine:'category:debardeur'" title="category:debardeur" role="subset" nhits="3128" selected="false"/>
+  <Query searchTerms=" refine:'category:canape'" title="category:canape" role="subset" nhits="3081" selected="false"/>
+  <Query searchTerms=" refine:'category:plage'" title="category:plage" role="subset" nhits="2955" selected="false"/>
+  <Query searchTerms=" refine:'category:pantacourt'" title="category:pantacourt" role="subset" nhits="2859" selected="false"/>
+  <Query searchTerms=" refine:'category:cardigan'" title="category:cardigan" role="subset" nhits="2801" selected="false"/>
+  <Query searchTerms=" refine:'supplier:MonShowRoom'" title="supplier:MonShowRoom" role="subset" nhits="2772" selected="false"/>
+  <Query searchTerms=" refine:'brand:ulla popken'" title="brand:ulla popken" role="subset" nhits="2683" selected="false"/>
+  <Query searchTerms=" refine:'supplier:Ulla Popken'" title="supplier:Ulla Popken" role="subset" nhits="2683" selected="false"/>
+  <Query searchTerms=" refine:'brand:dolce &amp; gabbana'" title="brand:dolce &amp; gabbana" role="subset" nhits="2628" selected="false"/>
+  <Query searchTerms=" refine:'brand:esprit'" title="brand:esprit" role="subset" nhits="2462" selected="false"/>
+  <Query searchTerms=" refine:'category:tunique'" title="category:tunique" role="subset" nhits="2442" selected="false"/>
+  <Query searchTerms=" refine:'brand:diesel'" title="brand:diesel" role="subset" nhits="2437" selected="false"/>
+  <Query searchTerms=" refine:'category:blouson'" title="category:blouson" role="subset" nhits="2419" selected="false"/>
+  <Query searchTerms=" refine:'brand:amatai'" title="brand:amatai" role="subset" nhits="2397" selected="false"/>
+  <Query searchTerms=" refine:'supplier:Amatai'" title="supplier:Amatai" role="subset" nhits="2397" selected="false"/>
+  <Query searchTerms=" refine:'supplier:Rue des Hommes.com'" title="supplier:Rue des Hommes.com" role="subset" nhits="2378" selected="false"/>
+  <Query searchTerms=" refine:'color:orange'" title="color:orange" role="subset" nhits="2374" selected="false"/>
+  <Query searchTerms=" refine:'category:montre'" title="category:montre" role="subset" nhits="2334" selected="false"/>
+  <Query searchTerms=" refine:'supplier:Shoes.fr'" title="supplier:Shoes.fr" role="subset" nhits="2303" selected="false"/>
+  <Query searchTerms=" price:45.0" title="price:45.0" role="subset" nhits="4843"/>
+  <Query searchTerms=" price:35.0" title="price:35.0" role="subset" nhits="4647"/>
+  <Query searchTerms=" price:59.0" title="price:59.0" role="subset" nhits="4076"/>
+  <Query searchTerms=" price:24.0" title="price:24.0" role="subset" nhits="3791"/>
+  <Query searchTerms=" price:69.0" title="price:69.0" role="subset" nhits="3702"/>
+  <Query searchTerms=" price:39.0" title="price:39.0" role="subset" nhits="3625"/>
+  <Query searchTerms=" price:49.0" title="price:49.0" role="subset" nhits="3592"/>
+  <Query searchTerms=" price:79.0" title="price:79.0" role="subset" nhits="3201"/>
+  <Query searchTerms=" price:29.0" title="price:29.0" role="subset" nhits="3037"/>
+  <Query searchTerms=" price:55.0" title="price:55.0" role="subset" nhits="3016"/>
+  <Query searchTerms=" price:25.0" title="price:25.0" role="subset" nhits="2871"/>
+  <Query searchTerms=" price:98.0" title="price:98.0" role="subset" nhits="2731"/>
+  <Query searchTerms=" price:19.9" title="price:19.9" role="subset" nhits="2671"/>
+  <Query searchTerms=" price:89.0" title="price:89.0" role="subset" nhits="2646"/>
+  <Query searchTerms=" price:65.0" title="price:65.0" role="subset" nhits="2403"/>
+  <Query searchTerms=" price:29.9" title="price:29.9" role="subset" nhits="2295"/>
+  <Query searchTerms=" price:75.0" title="price:75.0" role="subset" nhits="2286"/>
+  <Query searchTerms=" price:39.9" title="price:39.9" role="subset" nhits="2226"/>
+  <Query searchTerms=" price:30.0" title="price:30.0" role="subset" nhits="2084"/>
+  <Query searchTerms=" price:15.0" title="price:15.0" role="subset" nhits="2063"/>
+  <Query searchTerms=" price:32.0" title="price:32.0" role="subset" nhits="1824"/>
+  <Query searchTerms=" price:109.0" title="price:109.0" role="subset" nhits="1810"/>
+  <Query searchTerms=" price:85.0" title="price:85.0" role="subset" nhits="1728"/>
+  <Query searchTerms=" price:42.0" title="price:42.0" role="subset" nhits="1658"/>
+  <Query searchTerms=" price:95.0" title="price:95.0" role="subset" nhits="1481"/>
+  <Query searchTerms=" price:20.0" title="price:20.0" role="subset" nhits="1475"/>
+  <Query searchTerms=" price:49.9" title="price:49.9" role="subset" nhits="1474"/>
+  <Query searchTerms=" price:40.0" title="price:40.0" role="subset" nhits="1424"/>
+  <Query searchTerms=" price:24.9" title="price:24.9" role="subset" nhits="1396"/>
+  <Query searchTerms=" price:50.0" title="price:50.0" role="subset" nhits="1253"/>
+  <Query searchTerms=" price:115.0" title="price:115.0" role="subset" nhits="1249"/>
+  <Query searchTerms=" price:14.9" title="price:14.9" role="subset" nhits="1196"/>
+  <Query searchTerms=" price:18.0" title="price:18.0" role="subset" nhits="1170"/>
+  <Query searchTerms=" price:60.0" title="price:60.0" role="subset" nhits="1167"/>
+  <Query searchTerms=" price:10.0" title="price:10.0" role="subset" nhits="1115"/>
+  <Query searchTerms=" price:149.0" title="price:149.0" role="subset" nhits="1111"/>
+  <Query searchTerms=" price:28.0" title="price:28.0" role="subset" nhits="1053"/>
+  <Query searchTerms=" price:59.9" title="price:59.9" role="subset" nhits="1046"/>
+  <Query searchTerms=" price:19.0" title="price:19.0" role="subset" nhits="1035"/>
+  <Query searchTerms=" price:195.0" title="price:195.0" role="subset" nhits="1014"/>
+  <Query searchTerms=" price:21.0" title="price:21.0" role="subset" nhits="1000"/>
+  <Query searchTerms=" price:9.9" title="price:9.9" role="subset" nhits="996"/>
+  <Query searchTerms=" price:34.9" title="price:34.9" role="subset" nhits="973"/>
+  <Query searchTerms=" price:12.0" title="price:12.0" role="subset" nhits="952"/>
+  <Query searchTerms=" price:70.0" title="price:70.0" role="subset" nhits="890"/>
+  <Query searchTerms=" price:125.0" title="price:125.0" role="subset" nhits="889"/>
+  <Query searchTerms=" price:14.0" title="price:14.0" role="subset" nhits="872"/>
+  <Query searchTerms=" price:29.95" title="price:29.95" role="subset" nhits="868"/>
+  <Query searchTerms=" price:22.5" title="price:22.5" role="subset" nhits="839"/>
+  <Query searchTerms=" price:36.0" title="price:36.0" role="subset" nhits="832"/>
+  <Query searchTerms=" price:99.0" title="price:99.0" role="subset" nhits="824"/>
+  <Query searchTerms=" price:135.0" title="price:135.0" role="subset" nhits="815"/>
+  <Query searchTerms=" price:69.9" title="price:69.9" role="subset" nhits="813"/>
+  <Query searchTerms=" price:19.95" title="price:19.95" role="subset" nhits="807"/>
+  <Query searchTerms=" price:33.0" title="price:33.0" role="subset" nhits="802"/>
+  <Query searchTerms=" price:9.0" title="price:9.0" role="subset" nhits="798"/>
+  <Query searchTerms=" price:27.0" title="price:27.0" role="subset" nhits="798"/>
+  <Query searchTerms=" price:22.0" title="price:22.0" role="subset" nhits="770"/>
+  <Query searchTerms=" price:7.0" title="price:7.0" role="subset" nhits="769"/>
+  <Query searchTerms=" price:9.99" title="price:9.99" role="subset" nhits="769"/>
+  <Query searchTerms=" price:23.0" title="price:23.0" role="subset" nhits="730"/>
+  <Query searchTerms=" price:90.0" title="price:90.0" role="subset" nhits="703"/>
+  <Query searchTerms=" price:165.0" title="price:165.0" role="subset" nhits="693"/>
+  <Query searchTerms=" price:14.99" title="price:14.99" role="subset" nhits="682"/>
+  <Query searchTerms=" price:80.0" title="price:80.0" role="subset" nhits="675"/>
+  <Query searchTerms=" price:118.0" title="price:118.0" role="subset" nhits="667"/>
+  <Query searchTerms=" price:120.0" title="price:120.0" role="subset" nhits="664"/>
+  <Query searchTerms=" price:160.0" title="price:160.0" role="subset" nhits="661"/>
+  <Query searchTerms=" price:128.0" title="price:128.0" role="subset" nhits="657"/>
+  <Query searchTerms=" price:12.99" title="price:12.99" role="subset" nhits="642"/>
+  <Query searchTerms=" price:19.99" title="price:19.99" role="subset" nhits="640"/>
+  <Query searchTerms=" price:17.9" title="price:17.9" role="subset" nhits="630"/>
+  <Query searchTerms=" price:39.95" title="price:39.95" role="subset" nhits="630"/>
+  <Query searchTerms=" price:26.0" title="price:26.0" role="subset" nhits="627"/>
+  <Query searchTerms=" price:130.0" title="price:130.0" role="subset" nhits="623"/>
+  <Query searchTerms=" price:119.0" title="price:119.0" role="subset" nhits="618"/>
+  <Query searchTerms=" price:5.0" title="price:5.0" role="subset" nhits="604"/>
+  <Query searchTerms=" price:44.9" title="price:44.9" role="subset" nhits="604"/>
+  <Query searchTerms=" price:225.0" title="price:225.0" role="subset" nhits="604"/>
+  <Query searchTerms=" price:155.0" title="price:155.0" role="subset" nhits="592"/>
+  <Query searchTerms=" price:17.5" title="price:17.5" role="subset" nhits="590"/>
+  <Query searchTerms=" price:52.0" title="price:52.0" role="subset" nhits="590"/>
+  <Query searchTerms=" price:175.0" title="price:175.0" role="subset" nhits="587"/>
+  <Query searchTerms=" price:16.0" title="price:16.0" role="subset" nhits="571"/>
+  <Query searchTerms=" price:17.0" title="price:17.0" role="subset" nhits="569"/>
+  <Query searchTerms=" price:215.0" title="price:215.0" role="subset" nhits="569"/>
+  <Query searchTerms=" price:48.0" title="price:48.0" role="subset" nhits="564"/>
+  <Query searchTerms=" price:54.0" title="price:54.0" role="subset" nhits="563"/>
+  <Query searchTerms=" price:52.5" title="price:52.5" role="subset" nhits="547"/>
+  <Query searchTerms=" price:63.0" title="price:63.0" role="subset" nhits="538"/>
+  <Query searchTerms=" price:170.0" title="price:170.0" role="subset" nhits="532"/>
+  <Query searchTerms=" price:19.5" title="price:19.5" role="subset" nhits="527"/>
+  <Query searchTerms=" price:37.5" title="price:37.5" role="subset" nhits="527"/>
+  <Query searchTerms=" price:24.5" title="price:24.5" role="subset" nhits="526"/>
+  <Query searchTerms=" price:79.9" title="price:79.9" role="subset" nhits="520"/>
+  <Query searchTerms=" price:27.9" title="price:27.9" role="subset" nhits="516"/>
+  <Query searchTerms=" price:11.0" title="price:11.0" role="subset" nhits="515"/>
+  <Query searchTerms=" price:129.0" title="price:129.0" role="subset" nhits="513"/>
+  <Query searchTerms=" price:14.95" title="price:14.95" role="subset" nhits="512"/>
+  <Query searchTerms=" price:46.0" title="price:46.0" role="subset" nhits="510"/>
+  <Query searchTerms=" discount:50.0" title="discount:50.0" role="subset" nhits="20114"/>
+  <Query searchTerms=" discount:70.0" title="discount:70.0" role="subset" nhits="11381"/>
+  <Query searchTerms=" discount:40.0" title="discount:40.0" role="subset" nhits="7503"/>
+  <Query searchTerms=" discount:65.0" title="discount:65.0" role="subset" nhits="6733"/>
+  <Query searchTerms=" discount:30.0" title="discount:30.0" role="subset" nhits="5983"/>
+  <Query searchTerms=" discount:60.0" title="discount:60.0" role="subset" nhits="5680"/>
+  <Query searchTerms=" discount:20.0" title="discount:20.0" role="subset" nhits="5043"/>
+  <Query searchTerms=" discount:54.0" title="discount:54.0" role="subset" nhits="4509"/>
+  <Query searchTerms=" discount:49.0" title="discount:49.0" role="subset" nhits="3345"/>
+  <Query searchTerms=" discount:55.0" title="discount:55.0" role="subset" nhits="3243"/>
+  <Query searchTerms=" discount:53.0" title="discount:53.0" role="subset" nhits="2663"/>
+  <Query searchTerms=" discount:29.0" title="discount:29.0" role="subset" nhits="1977"/>
+  <Query searchTerms=" discount:59.0" title="discount:59.0" role="subset" nhits="1955"/>
+  <Query searchTerms=" discount:48.0" title="discount:48.0" role="subset" nhits="1914"/>
+  <Query searchTerms=" discount:52.0" title="discount:52.0" role="subset" nhits="1901"/>
+  <Query searchTerms=" discount:44.0" title="discount:44.0" role="subset" nhits="1835"/>
+  <Query searchTerms=" discount:35.0" title="discount:35.0" role="subset" nhits="1730"/>
+  <Query searchTerms=" discount:25.0" title="discount:25.0" role="subset" nhits="1690"/>
+  <Query searchTerms=" discount:56.0" title="discount:56.0" role="subset" nhits="1642"/>
+  <Query searchTerms=" discount:39.0" title="discount:39.0" role="subset" nhits="1612"/>
+  <Query searchTerms=" discount:45.0" title="discount:45.0" role="subset" nhits="1499"/>
+  <Query searchTerms=" discount:42.0" title="discount:42.0" role="subset" nhits="1391"/>
+  <Query searchTerms=" discount:10.0" title="discount:10.0" role="subset" nhits="1373"/>
+  <Query searchTerms=" discount:57.0" title="discount:57.0" role="subset" nhits="1345"/>
+  <Query searchTerms=" discount:33.0" title="discount:33.0" role="subset" nhits="1314"/>
+  <Query searchTerms=" discount:58.0" title="discount:58.0" role="subset" nhits="1292"/>
+  <Query searchTerms=" discount:19.0" title="discount:19.0" role="subset" nhits="1291"/>
+  <Query searchTerms=" discount:69.0" title="discount:69.0" role="subset" nhits="1267"/>
+  <Query searchTerms=" discount:46.0" title="discount:46.0" role="subset" nhits="1208"/>
+  <Query searchTerms=" discount:43.0" title="discount:43.0" role="subset" nhits="1207"/>
+  <Query searchTerms=" discount:31.0" title="discount:31.0" role="subset" nhits="1115"/>
+  <Query searchTerms=" discount:51.0" title="discount:51.0" role="subset" nhits="1081"/>
+  <Query searchTerms=" discount:64.0" title="discount:64.0" role="subset" nhits="995"/>
+  <Query searchTerms=" discount:41.0" title="discount:41.0" role="subset" nhits="983"/>
+  <Query searchTerms=" discount:14.0" title="discount:14.0" role="subset" nhits="977"/>
+  <Query searchTerms=" discount:15.0" title="discount:15.0" role="subset" nhits="926"/>
+  <Query searchTerms=" discount:37.0" title="discount:37.0" role="subset" nhits="910"/>
+  <Query searchTerms=" discount:28.0" title="discount:28.0" role="subset" nhits="868"/>
+  <Query searchTerms=" discount:66.0" title="discount:66.0" role="subset" nhits="785"/>
+  <Query searchTerms=" discount:62.0" title="discount:62.0" role="subset" nhits="782"/>
+  <Query searchTerms=" discount:38.0" title="discount:38.0" role="subset" nhits="778"/>
+  <Query searchTerms=" discount:61.0" title="discount:61.0" role="subset" nhits="764"/>
+  <Query searchTerms=" discount:47.0" title="discount:47.0" role="subset" nhits="746"/>
+  <Query searchTerms=" discount:32.0" title="discount:32.0" role="subset" nhits="612"/>
+  <Query searchTerms=" discount:63.0" title="discount:63.0" role="subset" nhits="561"/>
+  <Query searchTerms=" discount:74.0" title="discount:74.0" role="subset" nhits="538"/>
+  <Query searchTerms=" discount:71.0" title="discount:71.0" role="subset" nhits="533"/>
+  <Query searchTerms=" discount:24.0" title="discount:24.0" role="subset" nhits="499"/>
+  <Query searchTerms=" discount:21.0" title="discount:21.0" role="subset" nhits="496"/>
+  <Query searchTerms=" discount:68.0" title="discount:68.0" role="subset" nhits="475"/>
+  <Query searchTerms=" discount:36.0" title="discount:36.0" role="subset" nhits="464"/>
+  <Query searchTerms=" discount:9.0" title="discount:9.0" role="subset" nhits="433"/>
+  <Query searchTerms=" discount:27.0" title="discount:27.0" role="subset" nhits="397"/>
+  <Query searchTerms=" discount:67.0" title="discount:67.0" role="subset" nhits="391"/>
+  <Query searchTerms=" discount:34.0" title="discount:34.0" role="subset" nhits="389"/>
+  <Query searchTerms=" discount:75.0" title="discount:75.0" role="subset" nhits="364"/>
+  <Query searchTerms=" discount:72.0" title="discount:72.0" role="subset" nhits="358"/>
+  <Query searchTerms=" discount:17.0" title="discount:17.0" role="subset" nhits="321"/>
+  <Query searchTerms=" discount:16.0" title="discount:16.0" role="subset" nhits="295"/>
+  <Query searchTerms=" discount:22.0" title="discount:22.0" role="subset" nhits="276"/>
+  <Query searchTerms=" discount:73.0" title="discount:73.0" role="subset" nhits="270"/>
+  <Query searchTerms=" discount:4.0" title="discount:4.0" role="subset" nhits="257"/>
+  <Query searchTerms=" discount:76.0" title="discount:76.0" role="subset" nhits="237"/>
+  <Query searchTerms=" discount:23.0" title="discount:23.0" role="subset" nhits="233"/>
+  <Query searchTerms=" discount:26.0" title="discount:26.0" role="subset" nhits="222"/>
+  <Query searchTerms=" discount:77.0" title="discount:77.0" role="subset" nhits="188"/>
+  <Query searchTerms=" discount:80.0" title="discount:80.0" role="subset" nhits="177"/>
+  <Query searchTerms=" discount:18.0" title="discount:18.0" role="subset" nhits="151"/>
+  <Query searchTerms=" discount:11.0" title="discount:11.0" role="subset" nhits="140"/>
+  <Query searchTerms=" discount:79.0" title="discount:79.0" role="subset" nhits="128"/>
+  <Query searchTerms=" discount:13.0" title="discount:13.0" role="subset" nhits="120"/>
+  <Query searchTerms=" discount:12.0" title="discount:12.0" role="subset" nhits="117"/>
+  <Query searchTerms=" discount:78.0" title="discount:78.0" role="subset" nhits="112"/>
+  <Query searchTerms=" discount:8.0" title="discount:8.0" role="subset" nhits="109"/>
+  <Query searchTerms=" discount:6.0" title="discount:6.0" role="subset" nhits="101"/>
+  <Query searchTerms=" discount:5.0" title="discount:5.0" role="subset" nhits="81"/>
+  <Query searchTerms=" discount:7.0" title="discount:7.0" role="subset" nhits="71"/>
+  <Query searchTerms=" discount:3.0" title="discount:3.0" role="subset" nhits="51"/>
+  <Query searchTerms=" discount:82.0" title="discount:82.0" role="subset" nhits="46"/>
+  <Query searchTerms=" discount:81.0" title="discount:81.0" role="subset" nhits="44"/>
+  <Query searchTerms=" discount:83.0" title="discount:83.0" role="subset" nhits="36"/>
+  <Query searchTerms=" discount:84.0" title="discount:84.0" role="subset" nhits="25"/>
+  <Query searchTerms=" discount:85.0" title="discount:85.0" role="subset" nhits="25"/>
+  <Query searchTerms=" discount:2.0" title="discount:2.0" role="subset" nhits="21"/>
+  <Query searchTerms=" discount:1.0" title="discount:1.0" role="subset" nhits="20"/>
+  <Query searchTerms=" discount:86.0" title="discount:86.0" role="subset" nhits="13"/>
+  <Query searchTerms=" discount:87.0" title="discount:87.0" role="subset" nhits="6"/>
+  <Query searchTerms=" discount:91.0" title="discount:91.0" role="subset" nhits="6"/>
+  <Query searchTerms=" discount:90.0" title="discount:90.0" role="subset" nhits="4"/>
+  <Query searchTerms=" discount:89.0" title="discount:89.0" role="subset" nhits="3"/>
+  <Query searchTerms=" discount:88.0" title="discount:88.0" role="subset" nhits="2"/>
+  <Query searchTerms=" discount:93.0" title="discount:93.0" role="subset" nhits="2"/>
+  <Query searchTerms=" discount:97.0" title="discount:97.0" role="subset" nhits="1"/>
+  <letsshop:customer name="Happun"/>
+  <letsshop:appname value="Soldissimode" key="82842d494583280b940b208664f34014"/>
+  <entry>
+    <id>b67ab565e1e0f2661e08845111a2106f</id>
+    <link href="http://letstrack.happun.com/82842d494583280b940b208664f34014/b67ab565e1e0f2661e08845111a2106f/cpc/?url=http%3A%2F%2Fwww.fr.forzieri.com%2Ffra%2Fproduct_view.asp%3Fl%3Dfra%26c%3Dita%26pf_id%3Dor29159-005%26dept_id%3D58%26id_valore1%3D%26id_valore2%3D%26id_valore3%3D%26id_valore4%3D%26id_valore5%3D%26source%3D24hfr%26listid%3D1x"/>
+    <title>Flirt - Collier en or 750 jaune et diamants</title>
+    <description>Orlando Orlandini Flirt - Collier en or 750 jaune et diamants</description>
+    <size></size>
+    <letsshop>
+      <created_at>2010-07-12T10:30:22Z</created_at>
+      <reference>or29159-005</reference>
+      <price older="0.0" discount="0.0" currency="EUR">18900.0</price>
+      <shipping_cost>7</shipping_cost>
+      <thumb thumbnail="http://dynamic.forzieri.com/is/image/Forzieri/146x187/or29159-005-1x.jpg">http://dynamic.forzieri.com/is/image/Forzieri/354x454/or29159-005-1x.jpg</thumb>
+    </letsshop>
+    <Query searchTerms="refine:'universe:mode'" title="universe:mode" role="subset"/>
+    <Query searchTerms="refine:'brand:orlando orlandini'" title="brand:orlando orlandini" role="subset"/>
+    <Query searchTerms="refine:'supplier:Forzieri'" title="supplier:Forzieri" role="subset"/>
+    <Query searchTerms="refine:'gender:femme'" title="gender:femme" role="subset"/>
+    <Query searchTerms="refine:'category:bijoux'" title="category:bijoux" role="subset"/>
+    <Query searchTerms="refine:'category:collier'" title="category:collier" role="subset"/>
+  </entry>
+  <entry>
+    <id>6e0512b7f44299b3e1acb38939cf7d3e</id>
+    <link href="http://letstrack.happun.com/82842d494583280b940b208664f34014/6e0512b7f44299b3e1acb38939cf7d3e/cpc/?url=http%3A%2F%2Fwww.fr.forzieri.com%2Ffra%2Fproduct_view.asp%3Fl%3Dfra%26c%3Dita%26pf_id%3Dgh51117-001%26dept_id%3D76%26id_valore1%3D%26id_valore2%3D%26id_valore3%3D%26id_valore4%3D%26id_valore5%3D%26source%3D24hfr%26listid%3D1x"/>
+    <title>Fauteuil style Louis Philippe en cuir reptile noir</title>
+    <description>Ghibli Fauteuil style Louis Philippe en cuir reptile noir</description>
+    <size></size>
+    <letsshop>
+      <created_at>2010-07-12T10:30:22Z</created_at>
+      <reference>gh51117-001</reference>
+      <price older="0.0" discount="0.0" currency="EUR">15800.0</price>
+      <shipping_cost>7</shipping_cost>
+      <thumb thumbnail="http://dynamic.forzieri.com/is/image/Forzieri/146x187/gh51117-001-1x.jpg">http://dynamic.forzieri.com/is/image/Forzieri/354x454/gh51117-001-1x.jpg</thumb>
+    </letsshop>
+    <Query searchTerms="refine:'universe:decoration'" title="universe:decoration" role="subset"/>
+    <Query searchTerms="refine:'brand:ghibli'" title="brand:ghibli" role="subset"/>
+    <Query searchTerms="refine:'supplier:Forzieri'" title="supplier:Forzieri" role="subset"/>
+    <Query searchTerms="refine:'gender:femme'" title="gender:femme" role="subset"/>
+    <Query searchTerms="refine:'category:luminaire'" title="category:luminaire" role="subset"/>
+  </entry>
+</feed>
