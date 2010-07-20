@@ -33,6 +33,7 @@ task :gemspec do
     s.homepage = 'http://github.com/rgaidot/letsshop-mapper'
     s.summary = "Let's Shop Mapper is a Ruby library that allows to search and parse on Let's Shop Service"
     s.name = PKGNAME
+    s.rubyforge_project = PKGNAME
     s.version = PKGVERSION
     s.requirements << 'none'
     s.require_path = 'lib'

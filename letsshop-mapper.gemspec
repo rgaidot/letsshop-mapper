@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{letsshop-mapper}
-  s.version = "0.1.0"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["happun"]
@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--all --diagram --inline-source --line-numbers", "README.rdoc"]
   s.require_paths = ["lib"]
   s.requirements = ["none"]
+  s.rubyforge_project = %q{letsshop-mapper}
   s.rubygems_version = %q{1.3.5}
   s.summary = %q{Let's Shop Mapper is a Ruby library that allows to search and parse on Let's Shop Service}
 
