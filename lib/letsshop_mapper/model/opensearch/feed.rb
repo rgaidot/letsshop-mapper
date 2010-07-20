@@ -8,6 +8,8 @@ module LetsShopMapper
         attr_reader :startindex
         attr_reader :itemsperpage
         attr_reader :totalresults
+        
+        attr_reader :facets
 
         attr_reader :xml
         attr_reader :encoding
@@ -15,6 +17,7 @@ module LetsShopMapper
         def initialize(str = nil)
           @title, @link, @encoding = nil
           @entries = []
+          @facets = []
           parse(str) if str
         end
 
@@ -38,6 +41,10 @@ module LetsShopMapper
             if (e = doc.root.elements['/feed/totalResults']) && e.text
               @totalresults = e.text
             end
+            # Facets
+            doc.root.each_element_with_attribute('role', 'subset') do |f|
+              @facets << Base::Facet::new(f, self)
+            end
             # Entries
             doc.root.each_element('/feed/entry') do |e|
                @entries << Entry::new(e, self)
@@ -46,14 +53,24 @@ module LetsShopMapper
             raise LetsShopMapper::Error::UnknownFeedTypeException::new
           end
         end
-
+        
+        def get_facets_by(scope)
+          results = []
+          @facets.each { |f| 
+            if f.type == scope 
+              then results << f end }
+          return results
+        end
+        
         def to_s(localtime = true)
           s  = ''
           s += "Encoding: #{@encoding}\n"
           s += "Title: #{@title}\n"
           s += "Link: #{@link}\n"
-          s += "\n"
+          s += "Entries:\n"
           @entries.each { |i| s += i.to_s(localtime) }
+          s += "Facets\n"
+          @facets.each { |i| s += i.to_s(localtime) }
           s += "\n"
         end
       end

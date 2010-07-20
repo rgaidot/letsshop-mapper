@@ -80,6 +80,14 @@ module LetsShopMapper
         assert_equal "Search: robe  AND noir", lshop.feed.title
         assert_equal "0", lshop.feed.startindex
       end
+      def test_facets_feed
+        config = YAML.load_file('test/letsshop.yml')['development']
+        lshop = LetsShopMapper::Connection::Base::new(config["server"], config["key"])
+        lshop.find({:q => "robe"})
+        f = lshop.feed.get_facets_by("category")
+        assert_equal "robe", f[0].title
+        assert_equal "robe courte", f[1].title
+      end
       def test_example
         lshop = LetsShopMapper::Connection::Base::new("letsshop.dev.happun.com", "82842d494583280b940b208664f34014")
         lshop.find({:q => "robe", :start => 10, :nhits => 5, :f => "refine:'universe:mode',refine:'gender:femme'"})
