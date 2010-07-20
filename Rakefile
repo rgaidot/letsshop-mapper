@@ -49,7 +49,7 @@ end
 
 desc 'Builds the gem'
 task :build do
-  sh "gem build mongo_mapper.gemspec"
+  sh "gem build letsshop-mapper.gemspec"
 end
 
 desc 'Clean Up'
