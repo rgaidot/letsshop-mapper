@@ -10,7 +10,7 @@ require File.expand_path('../lib/letsshop_mapper/version', __FILE__)
 PKGNAME = 'letsshop-mapper'
 PKGVERSION = LetsShopMapper::Version
 
-PKGFILES = [ 'README', 'LICENSE', 'Rakefile' ]
+PKGFILES = [ 'README.rdoc', 'LICENSE', 'Rakefile' ]
 Find.find('lib/', 'test/') do |f|
   if FileTest.directory?(f) and f =~ /\.svn/
     Find.prune
@@ -30,21 +30,26 @@ task :gemspec do
     s.platform = Gem::Platform::RUBY
     s.author = 'happun'
     s.email = 'dev@happun.com'
-    s.homepage = 'http://letsshop.happun.com'
+    s.homepage = 'http://github.com/rgaidot/letsshop-mapper'
     s.summary = "Let's Shop Mapper is a Ruby library that allows to search and parse on Let's Shop Service"
     s.name = PKGNAME
     s.version = PKGVERSION
     s.requirements << 'none'
     s.require_path = 'lib'
     s.has_rdoc = true
-    s.extra_rdoc_files = ['README', 'LICENSE']
-    s.rdoc_options << '--all --diagram --inline-source --line-numbers' << 'README'
+    s.extra_rdoc_files = ['README.rdoc', 'LICENSE']
+    s.rdoc_options << '--all --diagram --inline-source --line-numbers' << 'README.rdoc'
     s.files = PKGFILES
     s.description = "Let's Shop Mapper is a Ruby library that allows to search and parse on Let's Shop Service."
   end
   File.open("#{spec.name}.gemspec", "w") do |f|
     f.write spec.to_ruby
   end
+end
+
+desc 'Builds the gem'
+task :build do
+  sh "gem build mongo_mapper.gemspec"
 end
 
 desc 'Clean Up'
