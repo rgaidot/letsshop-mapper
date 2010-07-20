@@ -48,15 +48,14 @@ task :gemspec do
 end
 
 desc 'Builds the gem'
-task :build do
-  sh "gem build letsshop-mapper.gemspec"
+task :install => :gemspec do
+  system "gem build letsshop-mapper.gemspec"
 end
 
 desc 'Clean Up'
 task :clean do |t|
   FileUtils.rm_rf "doc"
   FileUtils.rm_rf "pkg"
-  FileUtils.rm_f "letsshop-mapper.gemspec"
 end
 
 desc 'Generate documentation for the letsshop_mapper plugin.'
