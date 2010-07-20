@@ -44,7 +44,7 @@ module LetsShopMapper
             @price = e.text
             @currency = e.attributes.get_attribute("currency").value
             @discount = e.attributes.get_attribute("discount").value
-            @older = e.attributes.get_attribute("older").value
+            @older_price = e.attributes.get_attribute("older").value
           end
           entry.each_element('Query') do |f|
             if !f.attributes.get_attribute("title").value.index("supplier:").nil?
@@ -72,7 +72,7 @@ module LetsShopMapper
           s += "Description: #{@description}\n"
           s += "Thumbnail: #{@thumb}\n"
           s += "Price: #{@price} #{@currency}\n"
-          s += "Discount: #{@older} (#{@discount})\n"
+          s += "Discount: #{@older_price} (#{@discount})\n"
           s += "Supplier: #{@supplier}\n"
           s += "----------------------------------\n"
           @facets.each { |i| s += i.to_s(localtime) }
