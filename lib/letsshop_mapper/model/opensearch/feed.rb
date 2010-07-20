@@ -43,7 +43,7 @@ module LetsShopMapper
                @entries << Entry::new(e, self)
             end
           else
-            raise LetsShopMapper::UnknownFeedTypeException::new
+            raise LetsShopMapper::Error::UnknownFeedTypeException::new
           end
         end
 
@@ -54,7 +54,7 @@ module LetsShopMapper
           s += "Link: #{@link}\n"
           s += "\n"
           @entries.each { |i| s += i.to_s(localtime) }
-          s
+          s += "\n"
         end
       end
     end

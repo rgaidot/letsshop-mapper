@@ -1,14 +1,41 @@
 = Let's Shop Mapper
 
-== Description:
+== About
 
 Let's Shop Mapper is a Ruby library that allows to search and parse on Let's Shop Service
 
-== Install:
+== Install
 
 gem install letsshop-mapper
 
-== License:
+== Examples
+
+      lshop = LetsShopMapper::Connection::Base::new("hostname", "key")
+      lshop.find({:q => "robe", :start => 10, :nhits => 5, :f => "refine:'universe:mode',refine:'gender:femme'"})
+      lshop.feed.entries.each { |e| 
+        puts "Id: #{e.id}\n"
+        puts "Link: #{e.link}\n"
+        puts "Title: #{e.title}\n"
+        puts "Description: #{e.description}\n"
+        puts "Thumbnail: #{e.thumb}\n"
+        puts "Price: #{e.price}\n"
+        puts "Supplier: #{e.supplier}\n"
+        puts "------"
+        puts "facets"
+        puts "------"
+        e.facets.each { |f|
+          puts "Title: #{f.title}\n"
+          puts "Type: #{f.type}\n"
+          puts "Filter: #{f.filter.str_value}\n"
+          puts "Role: #{f.role}\n"
+          puts "Selected: #{f.selected}\n"
+        }
+        puts "-----------------------"
+      }
+
+See also the test code, especially letsshop_mapper_test.rb
+
+== License
 
 Copyright (C) 2010 Happun.
 

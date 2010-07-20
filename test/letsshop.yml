@@ -1,11 +1,11 @@
 development:
-  server: 
-  private_key: 
+  server: letsshop.dev.happun.com
+  key: 82842d494583280b940b208664f34014
 
 test:
   server: 
-  private_key: 
+  key: 
 
 production:
   server: 
-  private_key: 
+  key: 

@@ -30,7 +30,7 @@ module LetsShopMapper
           s  = ''
           s += "Title: #{@title}\n"
           s += "Type: #{@type}\n"
-          s += "Filter: #{@filter}\n"
+          s += "Filter: #{@filter.str_value}\n"
           s += "Role: #{@role}\n"
           s += "Selected: #{@selected}\n"
           s += "\n"

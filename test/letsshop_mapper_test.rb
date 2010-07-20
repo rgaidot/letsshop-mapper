@@ -40,7 +40,7 @@ module LetsShopMapper
       def test_search_jupe
         # initialize
         lshop = LetsShopMapper::Connection::Base::new("letsshop.dev.happun.com", "82842d494583280b940b208664f34014")
-        lshop.find("jupe")
+        lshop.find({:q => "jupe", :f => "refine:'universe:mode',refine:'gender:femme'"})
         assert_equal "UTF-8", lshop.feed.encoding
         assert_equal "Search: jupe", lshop.feed.title
         assert_equal "0", lshop.feed.startindex
@@ -51,17 +51,58 @@ module LetsShopMapper
       end
       def test_search_robe
         lshop = LetsShopMapper::Connection::Base::new("letsshop.dev.happun.com", "82842d494583280b940b208664f34014")
-        lshop.find("robe")
+        lshop.find({:q => "robe", :start => 10, :nhits => 5})
         assert_equal "UTF-8", lshop.feed.encoding
         assert_equal "Search: robe", lshop.feed.title
-        assert_equal "0", lshop.feed.startindex
+        assert_equal "10", lshop.feed.startindex
+        assert_equal "5", lshop.feed.itemsperpage
         assert_equal "http://letsshop.dev.happun.com/search/82842d494583280b940b208664f34014", lshop.feed.link
         f =  lshop.feed.entries[0].get_facets_by("universe")
         assert_equal "mode", f[0].title
         assert_equal "subset", f[0].role
         f =  lshop.feed.entries[0].get_facets_by("gender")
-        assert_equal "fille", f[0].title
-        assert_equal "enfant", f[1].title
+        assert_equal "femme", f[0].title
+      end
+      def test_eg_connect_yml
+        # initializers
+        config = YAML.load_file('test/letsshop.yml')['development']
+        lshop = LetsShopMapper::Connection::Base::new(config["server"], config["key"])
+        # 1) search 
+        lshop.find({:q => "jeans"})
+        f =  lshop.feed.entries[0].get_facets_by("universe")
+        assert_equal "mode", f[0].title
+        
+        # 2) search
+        lshop.find({:q => "robe noir"})
+        f =  lshop.feed.entries[0].get_facets_by("universe")
+        assert_equal "mode", f[0].title
+        assert_equal "UTF-8", lshop.feed.encoding
+        assert_equal "Search: robe  AND noir", lshop.feed.title
+        assert_equal "0", lshop.feed.startindex
+      end
+      def test_example
+        lshop = LetsShopMapper::Connection::Base::new("letsshop.dev.happun.com", "82842d494583280b940b208664f34014")
+        lshop.find({:q => "robe", :start => 10, :nhits => 5, :f => "refine:'universe:mode',refine:'gender:femme'"})
+        lshop.feed.entries.each { |e| 
+          puts "Id: #{e.id}\n"
+          puts "Link: #{e.link}\n"
+          puts "Title: #{e.title}\n"
+          puts "Description: #{e.description}\n"
+          puts "Thumbnail: #{e.thumb}\n"
+          puts "Price: #{e.price}\n"
+          puts "Supplier: #{e.supplier}\n"
+          puts "------"
+          puts "facets"
+          puts "------"
+          e.facets.each { |f|
+            puts "Title: #{f.title}\n"
+            puts "Type: #{f.type}\n"
+            puts "Filter: #{f.filter.str_value}\n"
+            puts "Role: #{f.role}\n"
+            puts "Selected: #{f.selected}\n"
+          }
+          puts "-----------------------"
+        }
       end
     end
   end
