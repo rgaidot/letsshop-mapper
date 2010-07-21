@@ -26,10 +26,12 @@ module LetsShopMapper
         end
       end
       def find(conditions = {})
-        query = "?q=#{CGI.escape(conditions[:q])}" if conditions[:q] != nil
+        query = "?"
+        query << "q=#{CGI.escape(conditions[:q])}" if conditions[:q] != nil
         query << "&start=#{conditions[:start]}" if conditions[:start] != nil
         query << "&nhits=#{conditions[:nhits]}" if conditions[:nhits] != nil
         query << "&f=#{CGI.escape(conditions[:f].gsub(/\047/,"\""))}" if conditions[:f] != nil
+        query << "&c=#{CGI.escape(conditions[:c])}" if conditions[:c] != nil
         query << "&sort=#{CGI.escape(conditions[:sort])}" if conditions[:sort] != nil
         begin
           @response = Net::HTTP.get_response(URI.parse("#{@uri}/#{query}"))

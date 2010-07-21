@@ -37,19 +37,7 @@ module LetsShopMapper
           assert_equal false, f[0].selected
         end
       end
-      def test_search_jupe
-        # initialize
-        lshop = LetsShopMapper::Connection::Base::new("letsshop.dev.happun.com", "82842d494583280b940b208664f34014")
-        lshop.find({:q => "jupe", :f => "refine:'universe:mode',refine:'gender:femme'"})
-        assert_equal "UTF-8", lshop.feed.encoding
-        assert_equal "Search: jupe", lshop.feed.title
-        assert_equal "0", lshop.feed.startindex
-        assert_equal "http://letsshop.dev.happun.com/search/82842d494583280b940b208664f34014", lshop.feed.link
-        f =  lshop.feed.entries[0].get_facets_by("universe")
-        assert_equal "mode", f[0].title
-        assert_equal "subset", f[0].role
-      end
-      def test_search_robe
+      def test_search
         lshop = LetsShopMapper::Connection::Base::new("letsshop.dev.happun.com", "82842d494583280b940b208664f34014")
         lshop.find({:q => "robe", :start => 10, :nhits => 5})
         assert_equal "UTF-8", lshop.feed.encoding
@@ -63,7 +51,7 @@ module LetsShopMapper
         f =  lshop.feed.entries[0].get_facets_by("gender")
         assert_equal "femme", f[0].title
       end
-      def test_eg_connect_yml
+      def test_example_search_with_yml
         # initializers
         config = YAML.load_file('test/letsshop.yml')['development']
         lshop = LetsShopMapper::Connection::Base::new(config["server"], config["key"])
@@ -71,7 +59,6 @@ module LetsShopMapper
         lshop.find({:q => "jeans"})
         f =  lshop.feed.entries[0].get_facets_by("universe")
         assert_equal "mode", f[0].title
-        
         # 2) search
         lshop.find({:q => "robe noir"})
         f =  lshop.feed.entries[0].get_facets_by("universe")
@@ -111,6 +98,32 @@ module LetsShopMapper
           }
           puts "-----------------------"
         }
+      end
+      def test_category
+        lshop = LetsShopMapper::Connection::Base::new("letsshop.dev.happun.com", "82842d494583280b940b208664f34014")
+        lshop.find({:c => "68446949-6-39989294", :start => 0, :nhits => 2})
+        assert_equal "UTF-8", lshop.feed.encoding
+        assert_equal "Search: ", lshop.feed.title
+        assert_equal "http://letsshop.dev.happun.com/search/82842d494583280b940b208664f34014", lshop.feed.link
+        f =  lshop.feed.entries[0].get_facets_by("category")
+        assert_equal "chaussure", f[0].title
+        assert_equal "subset", f[0].role
+        f =  lshop.feed.entries[0].get_facets_by("universe")
+        assert_equal "mode", f[0].title
+        puts lshop.feed
+      end
+      def test_category_find
+        lshop = LetsShopMapper::Connection::Base::new("letsshop.dev.happun.com", "82842d494583280b940b208664f34014")
+        lshop.find({:c => "68446949-6-39989294", :q => "escarpin noir",:start => 0, :nhits => 2})
+        assert_equal "UTF-8", lshop.feed.encoding
+        assert_equal "Search: escarpin  AND noir", lshop.feed.title
+        assert_equal "http://letsshop.dev.happun.com/search/82842d494583280b940b208664f34014", lshop.feed.link
+        f =  lshop.feed.entries[0].get_facets_by("category")
+        assert_equal "chaussure", f[0].title
+        assert_equal "subset", f[0].role
+        f =  lshop.feed.entries[0].get_facets_by("universe")
+        assert_equal "mode", f[0].title
+        puts lshop.feed
       end
     end
   end
