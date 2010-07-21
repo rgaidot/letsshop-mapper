@@ -3,6 +3,7 @@ require 'tempfile'
 require 'rexml/document'
 
 module LetsShopMapper
+  autoload :REXML, "letsshop_mapper/patch/rexml"
   autoload :Version, "letsshop_mapper/version"
   autoload :Connection, "letsshop_mapper/connection"
   autoload :Error, "letsshop_mapper/exceptions"
@@ -17,7 +18,7 @@ module LetsShopMapper
       autoload :Entry, "letsshop_mapper/model/opensearch/entry"
     end
     module Tree
-      autoload :Tree, "letsshop_mapper/model/Tree/tree"
+      autoload :Tree, "letsshop_mapper/model/tree/tree"
     end
   end
 end

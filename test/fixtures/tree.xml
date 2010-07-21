@@ -1,0 +1,1240 @@
+<categories> 
+  <customer name="Happun"/> 
+  <appname value="Soldissimode" key="82842d494583280b940b208664f34014"/> 
+  <category> 
+    <name id="631566134-19-513837008">Fran&#231;ais</name> 
+    <filter position="10" depend="true" value="lang:fr" operator="AND"/> 
+    <category> 
+      <name id="709669461-42-613454609">Mode</name> 
+      <filter position="1" depend="true" value="universe:mode" operator="AND"/> 
+      <category> 
+        <name id="21182171-2-431775885">Femme</name> 
+        <filter position="2" depend="true" value="gender:femme" operator="AND"/> 
+        <category> 
+          <name id="840589162-5-516389551">Robes</name> 
+          <filter position="10" depend="true" value="category:robe" operator="AND"/> 
+          <category> 
+            <name id="988469447-46-504978696">Robes longues</name> 
+            <filter position="10" depend="true" value="category:robe longue" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="732830253-47-617452994">Robes courtes</name> 
+            <filter position="10" depend="true" value="category:robe courte" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="642045047-50-10278000">Robes en jean</name> 
+            <filter position="10" depend="true" value="category:robe en jean" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="910484767-3649-539761227">Robe pull</name> 
+            <filter position="10" depend="true" value="category:robe pull" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="789303881-3650-953958567">Robe bustier</name> 
+            <filter position="10" depend="true" value="category:robe bustier" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="301793969-3651-781773832">Robe d&#233;bardeur</name> 
+            <filter position="10" depend="true" value="category:robe debardeur" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="997992922-3652-770468774">Robe tablier</name> 
+            <filter position="10" depend="true" value="category:robe-tablier" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="205215914-3653-227172698">Robe de plage</name> 
+            <filter position="10" depend="true" value="category:robe de plage" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="759250217-3654-771479665">Robe nuisette</name> 
+            <filter position="10" depend="true" value="category:robe de plage" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="68446949-6-39989294">Chaussures</name> 
+          <filter position="10" depend="true" value="category:chaussure" operator="AND"/> 
+          <category> 
+            <name id="323943721-52-815340025">Escarpins</name> 
+            <filter position="10" depend="true" value="category:escarpin" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="225398772-53-163123687">Sandales</name> 
+            <filter position="10" depend="true" value="category:sandale" operator="AND"/> 
+            <category> 
+              <name id="266565620-3604-321957249">Sandales gu&#234;tre</name> 
+              <filter position="10" depend="true" value="category:sandales guetre" operator="AND"/> 
+            </category> 
+            <category> 
+              <name id="226889425-3605-637504175">Sandales a talon</name> 
+              <filter position="10" depend="true" value="category:sandales a talon" operator="AND"/> 
+            </category> 
+            <category> 
+              <name id="128200101-3606-134972740">Sandales de plage</name> 
+              <filter position="10" depend="true" value="category:sandales de plage" operator="AND"/> 
+            </category> 
+          </category> 
+          <category> 
+            <name id="15896053-54-136215958">Sabots</name> 
+            <filter position="10" depend="true" value="category:sabot" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="974081520-55-418657368">Mules</name> 
+            <filter position="10" depend="true" value="category:mule" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="613566427-56-335833834">Tongs</name> 
+            <filter position="10" depend="true" value="category:tong" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="43115710-57-998772747">Baskets</name> 
+            <filter position="10" depend="true" value="category:basket" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="550562262-58-784535469">Bottes</name> 
+            <filter position="10" depend="true" value="category:botte" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="940142447-59-74506391">Boots</name> 
+            <filter position="10" depend="true" value="category:boots" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="931923364-60-801255881">Ballerines</name> 
+            <filter position="10" depend="true" value="category:ballerine" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="496721074-61-292363895">Mocassins</name> 
+            <filter position="10" depend="true" value="category:mocassin" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="340582805-62-526100428">Spartiates</name> 
+            <filter position="10" depend="true" value="category:spartiate" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="276666863-63-623471120">Chaussures de sport</name> 
+            <filter position="10" depend="true" value="category:chaussures de sport" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="627370557-64-113334561">Bottines</name> 
+            <filter position="10" depend="true" value="category:bottine" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="998608591-65-215277562">Botillons</name> 
+            <filter position="10" depend="true" value="category:botillon" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="298647554-66-157023184">Charentaises</name> 
+            <filter position="10" depend="true" value="category:charentaise" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="440771926-67-120497095">Chaussons</name> 
+            <filter position="10" depend="true" value="category:chausson" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="159721847-3607-272586621">Tennis</name> 
+            <filter position="10" depend="true" value="category:tennis" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="503879781-3608-943810815">Sneaker</name> 
+            <filter position="10" depend="true" value="category:sneaker" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="164157298-3609-561250170">Chaussures de ville</name> 
+            <filter position="10" depend="true" value="category:chaussures de ville" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="689816814-3610-103305752">Botillon</name> 
+            <filter position="10" depend="true" value="category:botillon" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="680912164-3611-38082062">Derby</name> 
+            <filter position="10" depend="true" value="category:derby" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="128279148-3612-548867424">Lowboot</name> 
+            <filter position="10" depend="true" value="category:lowboot" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="821618885-7-563240897">Lingeries</name> 
+          <filter position="10" depend="true" value="category:lingerie" operator="AND"/> 
+          <category> 
+            <name id="976584560-123-408163042">Chaussettes</name> 
+            <filter position="10" depend="true" value="category:chaussette" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="439963711-124-541029639">Shortys</name> 
+            <filter position="10" depend="true" value="category:shorty" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="668602344-125-26901898">Tangas</name> 
+            <filter position="10" depend="true" value="category:tanga" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="340900981-126-574317583">Soutien-gorges</name> 
+            <filter position="10" depend="true" value="category:soutien-gorge" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="100408171-127-908640275">Strings</name> 
+            <filter position="10" depend="true" value="category:string" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="106875604-128-884133084">Bustiers</name> 
+            <filter position="10" depend="true" value="category:bustier" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="457522308-129-888080585">Collants</name> 
+            <filter position="10" depend="true" value="category:chaussure" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="101882970-130-536999768">Gu&#234;pi&#232;res</name> 
+            <filter position="10" depend="true" value="category:guepiere" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="235066280-131-878697632">Jarretelles</name> 
+            <filter position="10" depend="true" value="category:jarretelle" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="439514335-132-264674388">Corsets</name> 
+            <filter position="10" depend="true" value="category:corset" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="377014167-133-352214511">Boxers</name> 
+            <filter position="10" depend="true" value="category:boxer" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="150975623-134-192826953">Gainettes</name> 
+            <filter position="10" depend="true" value="category:gainette" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="892516106-136-393428033">Gu&#234;tres</name> 
+            <filter position="10" depend="true" value="category:guetre" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="453750559-218-565028942">Pyjamas</name> 
+            <filter position="10" depend="false" value="category:linge de nuit" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="229528948-3630-999366061">Culotte</name> 
+            <filter position="10" depend="true" value="category:culotte" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="407619531-3631-263998935">Slip</name> 
+            <filter position="10" depend="true" value="category:slip" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="386625189-3632-652711753">Brassiere</name> 
+            <filter position="10" depend="true" value="category:brassiere" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="64225032-3633-569509573">Maillot de corp</name> 
+            <filter position="10" depend="true" value="category:maillot de corp" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="699808594-3634-277469067">Gaine</name> 
+            <filter position="10" depend="true" value="category:gaine" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="232532-3636-853607963">Bodies</name> 
+            <filter position="10" depend="true" value="category:bodies" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="742807243-3637-379330111">Mi-bas</name> 
+            <filter position="10" depend="true" value="category:mi-bas" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="897595023-3638-426472045">Combishort</name> 
+            <filter position="10" depend="true" value="category:combishort" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="944492774-9-588814340">Pantalons</name> 
+          <filter position="10" depend="true" value="category:pantalon" operator="AND"/> 
+          <category> 
+            <name id="562729850-68-456117057">Pantacourts</name> 
+            <filter position="10" depend="true" value="category:pantacourt" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="516478894-69-823219714">Bermudas</name> 
+            <filter position="10" depend="true" value="category:bermuda" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="124468166-70-425917712">Leggings</name> 
+            <filter position="10" depend="true" value="category:legging" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="337875778-72-162506538">Sarouels</name> 
+            <filter position="10" depend="true" value="category:sarouel" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="692142296-73-696319898">Corsaires</name> 
+            <filter position="10" depend="true" value="category:corsaire" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="1306229-74-476745196">Salopettes</name> 
+            <filter position="10" depend="true" value="category:salopette" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="451711982-75-904573168">Shorts</name> 
+            <filter position="10" depend="true" value="category:short" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="615620185-76-943235645">Treggings</name> 
+            <filter position="10" depend="true" value="category:tregging" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="87565391-173-798025504">Jeans</name> 
+            <filter position="10" depend="true" value="category:jean" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="154908348-3640-44643498">Battle</name> 
+            <filter position="10" depend="true" value="category:battle" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="76877941-3641-176455973">Combinaison</name> 
+            <filter position="10" depend="true" value="category:combinaison" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="509826008-3642-499294608">Combishort</name> 
+            <filter position="10" depend="true" value="category:combishort" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="44983918-3643-601773442">Pantalon sport</name> 
+            <filter position="10" depend="true" value="category:pantalon sport" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="760388352-3644-723576728">Pantalon de grossesse</name> 
+            <filter position="10" depend="true" value="category:pantalon de grossesse" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="89671800-3646-675276397">Slim</name> 
+            <filter position="10" depend="true" value="category:slim" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="745283065-3647-821367212">Tregging</name> 
+            <filter position="10" depend="true" value="category:tregging" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="332009934-11-329445953">Accessoires</name> 
+          <filter position="10" depend="true" value="category:accessoire" operator="AND"/> 
+          <category> 
+            <name id="154349097-12-360679446">Bandana</name> 
+            <filter position="10" depend="true" value="category:bandana" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="114908154-13-326944399">Bonnet</name> 
+            <filter position="10" depend="true" value="category:bonnet" operator="AND"/> 
+            <category> 
+              <name id="321999315-3594-945274150">Bonnet long</name> 
+              <filter position="10" depend="true" value="category:bonnet long" operator="AND"/> 
+            </category> 
+            <category> 
+              <name id="688624252-3595-710111446">Bonnets &#224; pompon</name> 
+              <filter position="10" depend="true" value="category:bonnets a pompon" operator="AND"/> 
+            </category> 
+            <category> 
+              <name id="184548427-3596-752374706">Bonnets &#224; visiere</name> 
+              <filter position="10" depend="true" value="category:bonnets a visiere" operator="AND"/> 
+            </category> 
+            <category> 
+              <name id="635348445-3597-862537359">Bonnets p&#233;ruviens</name> 
+              <filter position="10" depend="true" value="category:bonnets peruviens" operator="AND"/> 
+            </category> 
+          </category> 
+          <category> 
+            <name id="868343611-14-630325808">Casquette</name> 
+            <filter position="10" depend="true" value="category:casquette" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="328621033-15-276887326">Ceintures</name> 
+            <filter position="10" depend="true" value="category:ceinture" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="171651787-16-803291513">Chapeaux</name> 
+            <filter position="10" depend="true" value="category:chapeau" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="24198791-17-660819251">Echarpe</name> 
+            <filter position="10" depend="true" value="category:echarpe" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="567185646-18-970111684">Lunettes de soleil</name> 
+            <filter position="10" depend="true" value="category:lunette" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="234544210-219-254637770">Gants</name> 
+            <filter position="10" depend="true" value="category:gant" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="701027950-3584-570931101">Foulard</name> 
+            <filter position="10" depend="false" value="category:foulard" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="969326406-3585-408924941">Etole</name> 
+            <filter position="10" depend="true" value="category:etole" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="937921105-3586-975222738">Mitaine</name> 
+            <filter position="10" depend="true" value="category:mitaine" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="242054584-3587-458083489">Par&#233;o</name> 
+            <filter position="10" depend="true" value="category:pareo" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="375164062-3588-978478043">Chale</name> 
+            <filter position="10" depend="true" value="category:chale" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="751638611-3589-641446012">Serre-t&#234;te</name> 
+            <filter position="10" depend="false" value="category:serre-tete" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="517084042-3590-698356576">Bandeaux</name> 
+            <filter position="10" depend="true" value="category:bandeau" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="17743962-3591-209307735">Fichu</name> 
+            <filter position="10" depend="true" value="category:fichu" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="616771362-3592-256855202">Manchon</name> 
+            <filter position="10" depend="true" value="category:manchon" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="15637315-3598-634682517">Col</name> 
+            <filter position="10" depend="true" value="category:col" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="615134192-3599-706297157">Genouillere</name> 
+            <filter position="10" depend="true" value="category:genouillere" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="200495078-3600-153841132">Serviette</name> 
+            <filter position="10" depend="true" value="category:serviette" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="31211048-3601-121911398">Chapka</name> 
+            <filter position="10" depend="true" value="category:chapka" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="626971399-3602-650199977">Cagoule</name> 
+            <filter position="10" depend="true" value="category:cagoule" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="845054005-3656-548519673">Bob</name> 
+            <filter position="10" depend="true" value="category:bob" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="314523701-3657-212697475">Parapluie</name> 
+            <filter position="10" depend="true" value="category:parapluie" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="622029761-3658-215869192">B&#233;ret</name> 
+            <filter position="10" depend="true" value="category:beret" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="953210836-28-480380554">Manteaux</name> 
+          <filter position="10" depend="true" value="category:manteaux" operator="AND"/> 
+          <category> 
+            <name id="783258322-91-245861871">Blousons</name> 
+            <filter position="10" depend="true" value="category:blouson" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="357836990-92-860078600">Vestes</name> 
+            <filter position="10" depend="true" value="category:veste" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="844993767-93-845283722">Parkas</name> 
+            <filter position="10" depend="true" value="category:parka" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="980856087-94-859889005">Imperm&#233;ables</name> 
+            <filter position="10" depend="true" value="category:impermeable" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="734699540-95-1550342">Trenchs</name> 
+            <filter position="10" depend="true" value="category:trench" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="67909064-96-314522491">Pardessus</name> 
+            <filter position="10" depend="true" value="category:pardessus" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="357822480-97-633958852">Cabans</name> 
+            <filter position="10" depend="true" value="category:caban" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="522081978-98-57562510">Blazers</name> 
+            <filter position="10" depend="true" value="category:blazer" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="677827573-99-841468044">Doudounes</name> 
+            <filter position="10" depend="true" value="category:doudoune" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="959692926-101-629113696">Jackets</name> 
+            <filter position="10" depend="true" value="category:jacket" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="30111406-30-887680612">Pulls</name> 
+          <filter position="10" depend="true" value="category:pull" operator="AND"/> 
+          <category> 
+            <name id="83943770-83-963945128">Sweats</name> 
+            <filter position="10" depend="true" value="category:sweat" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="745563454-84-549477545">Polaires</name> 
+            <filter position="10" depend="true" value="category:polaire" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="217545260-85-255760027">Pull-overs</name> 
+            <filter position="10" depend="true" value="category:pullover" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="698737660-87-616988940">Sous pulls</name> 
+            <filter position="10" depend="true" value="category:sous-pull" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="434811098-89-317950353">Pulls col roul&#233;</name> 
+            <filter position="10" depend="true" value="category:col roule" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="189865320-32-219292534">Sacs</name> 
+          <filter position="10" depend="true" value="category:sac" operator="AND"/> 
+          <category> 
+            <name id="553713324-108-438119817">Petits sacs</name> 
+            <filter position="10" depend="true" value="category:petit sac" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="538815482-109-718010064">Sacs moyens</name> 
+            <filter position="10" depend="true" value="category:moyen sac" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="820673183-110-372635498">Grands sacs</name> 
+            <filter position="10" depend="true" value="category:grand sac" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="910612804-111-997720533">Pochettes</name> 
+            <filter position="10" depend="true" value="category:pochette" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="423387638-112-770636917">Sacoches</name> 
+            <filter position="10" depend="true" value="category:sacoche" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="958848262-113-796914913">Sacs &#224; main</name> 
+            <filter position="10" depend="true" value="category:sac a main" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="917860742-114-893987365">Portefeuilles</name> 
+            <filter position="10" depend="true" value="category:portefeuille" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="841255982-115-219689734">Besaces</name> 
+            <filter position="10" depend="true" value="category:besace" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="553202386-116-889402469">Porte-monnaies</name> 
+            <filter position="10" depend="true" value="category:porte-monnaie" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="759444328-118-532381523">Sacs cabas</name> 
+            <filter position="10" depend="true" value="category:sac caba" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="83813260-3659-687973013">Trousse de toilette</name> 
+            <filter position="10" depend="true" value="category:trousse de toilette" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="77375540-3660-49668827">Sac de sport</name> 
+            <filter position="10" depend="true" value="category:sac de sport" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="893801029-3661-451075832">Shopper</name> 
+            <filter position="10" depend="true" value="category:shopper" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="350826966-3662-826596972">Sac de voyage</name> 
+            <filter position="10" depend="true" value="category:voyage" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="426162341-3663-297621175">Sac &#224; dos</name> 
+            <filter position="10" depend="true" value="category:sac a dos" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="523692334-3664-200447363">Panier</name> 
+            <filter position="10" depend="true" value="category:panier" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="836372107-3665-873214287">Sac &#224; chaussures</name> 
+            <filter position="10" depend="true" value="category:sac a chaussures" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="24747646-3666-396832776">Pilot</name> 
+            <filter position="10" depend="true" value="category:pilot" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="520148071-3667-106460475">Cartable</name> 
+            <filter position="10" depend="true" value="category:cartable" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="495880417-3668-540326594">Sac banane</name> 
+            <filter position="10" depend="true" value="category:banane" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="877713433-77-374519935">Jupe</name> 
+          <filter position="10" depend="true" value="category:jupe" operator="AND"/> 
+          <category> 
+            <name id="712357156-78-348706701">Mini jupe</name> 
+            <filter position="10" depend="true" value="category:mini jupe" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="491989444-79-426515152">Jupe longue</name> 
+            <filter position="10" depend="true" value="category:jupe longue" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="551769747-81-739530063">Jupe en jean</name> 
+            <filter position="10" depend="true" value="category:jupe en jean" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="135688129-82-200576432">Jupons</name> 
+            <filter position="10" depend="true" value="category:jupon" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="54642599-3627-413142296">Jupe de tennis</name> 
+            <filter position="10" depend="true" value="category:jupe de tennis" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="797958158-3628-155509746">Jupette</name> 
+            <filter position="10" depend="true" value="category:jupette" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="72413306-103-143497003">Gilets</name> 
+          <filter position="10" depend="true" value="category:gilet" operator="AND"/> 
+          <category> 
+            <name id="789602801-104-736555018">Bol&#233;ros</name> 
+            <filter position="10" depend="true" value="category:bolero" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="439639025-106-226058460">Cardigans</name> 
+            <filter position="10" depend="true" value="category:cardigan" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="40114655-107-693633586">Twin sets</name> 
+            <filter position="10" depend="true" value="category:twin set" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="591179423-3616-763400077">Twin set</name> 
+            <filter position="10" depend="true" value="category:twin set" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="233433525-119-762289965">Tops</name> 
+          <filter position="10" depend="true" value="category:top" operator="AND"/> 
+          <category> 
+            <name id="309792859-120-444268898">T-shirts</name> 
+            <filter position="10" depend="true" value="category:tshirt" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="738048733-121-501856781">Polos</name> 
+            <filter position="10" depend="true" value="category:polo" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="891097468-122-290450461">D&#233;bardeurs</name> 
+            <filter position="10" depend="true" value="category:debardeur" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="533252929-3655-799981369">Marini&#232;re</name> 
+            <filter position="10" depend="true" value="category:mariniere" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="390163021-137-345513227">Chemises</name> 
+          <filter position="10" depend="true" value="category:chemise" operator="AND"/> 
+          <category> 
+            <name id="321578716-138-93779396">Chemisiers</name> 
+            <filter position="10" depend="true" value="category:chemisier" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="731918307-139-814501382">Caftans</name> 
+            <filter position="10" depend="true" value="category:caftan" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="387038359-140-408691621">Tuniques</name> 
+            <filter position="10" depend="true" value="category:tunique" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="360238416-141-928596084">Blouses</name> 
+            <filter position="10" depend="true" value="category:blouse" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="924779459-142-697399491">Bijoux</name> 
+          <filter position="10" depend="true" value="category:bijoux" operator="AND"/> 
+          <category> 
+            <name id="480667054-143-904233964">Montres</name> 
+            <filter position="10" depend="true" value="category:montre" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="263220156-144-769961625">Joailleries</name> 
+            <filter position="10" depend="true" value="category:joaillerie" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="191706947-145-122568743">Colliers</name> 
+            <filter position="10" depend="true" value="category:collier" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="515776190-146-643348985">Bracelets</name> 
+            <filter position="10" depend="true" value="category:bracelet" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="416452585-147-399706471">Boucles d'oreilles</name> 
+            <filter position="10" depend="true" value="category:boucle d'oreille" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="412869004-148-496302138">Creoles</name> 
+            <filter position="10" depend="true" value="category:creole" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="35371342-149-634778502">Bagues</name> 
+            <filter position="10" depend="true" value="category:bague" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="928884374-150-168234665">Sautoirs</name> 
+            <filter position="10" depend="true" value="category:sautoir" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="552163763-151-24998742">Broches</name> 
+            <filter position="10" depend="true" value="category:broche" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="546810593-152-686169474">Pampilles</name> 
+            <filter position="10" depend="true" value="category:pampille" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="91067725-153-742176873">Pendentifs</name> 
+            <filter position="10" depend="true" value="category:pendentif" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="453081258-155-890012579">Bijoux de sacs</name> 
+            <filter position="10" depend="true" value="category:bijou de sac" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="656853781-3603-100286529">Bijoux cha&#238;ne</name> 
+            <filter position="10" depend="true" value="category:chaine" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="209766057-157-609898465">Plage</name> 
+          <filter position="10" depend="true" value="category:plage" operator="AND"/> 
+          <category> 
+            <name id="374825185-158-854498908">Bikinis</name> 
+            <filter position="10" depend="true" value="category:bikini" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="643674162-159-231287393">Maillots de bain</name> 
+            <filter position="10" depend="true" value="category:maillot de bain" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="272101549-160-804218062">Beachwears</name> 
+            <filter position="10" depend="true" value="category:beachwear" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="436322109-164-222918778">Draps de bain</name> 
+            <filter position="10" depend="true" value="category:drap de bain" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="766936266-165-302252038">Slips de bain</name> 
+            <filter position="10" depend="true" value="category:slip de bain" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="839055628-166-417016851">Boardshorts</name> 
+            <filter position="10" depend="true" value="category:boardshort" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="916971949-168-442516237">Surmaillots</name> 
+            <filter position="10" depend="true" value="category:surmaillot" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="333230082-169-689825037">Par&#233;os</name> 
+            <filter position="10" depend="true" value="category:pareo" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="935249351-3613-481223982">Tailleur</name> 
+          <filter position="10" depend="true" value="category:tailleur" operator="AND"/> 
+        </category> 
+        <category> 
+          <name id="121874341-3617-956220452">Homewear femme</name> 
+          <filter position="10" depend="true" value="category:linge de nuit" operator="AND"/> 
+          <category> 
+            <name id="243920964-3618-802227229">Pyjama femme</name> 
+            <filter position="10" depend="true" value="category:pyjama" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="488303086-3619-797400338">Kimono femme</name> 
+            <filter position="10" depend="true" value="category:kimono" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="964935346-3620-799054092">Pyjashort</name> 
+            <filter position="10" depend="true" value="category:pyjashort" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="889705101-3621-351985363">Nuisette</name> 
+            <filter position="10" depend="true" value="category:nuisette" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="869768255-3622-809118472">Chemise de nuit</name> 
+            <filter position="10" depend="true" value="category:chemise de nuit " operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="703134757-3623-495834085">Robe de chambre</name> 
+            <filter position="10" depend="true" value="category:robe de chambre" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="392888588-3624-609986231">Deshabill&#233;</name> 
+            <filter position="10" depend="true" value="category:deshabille" operator="AND"/> 
+          </category> 
+        </category> 
+      </category> 
+      <category> 
+        <name id="725978027-3-154752631">Homme</name> 
+        <filter position="2" depend="true" value="gender:homme" operator="AND"/> 
+        <category> 
+          <name id="303891010-8-436173353">Pantalons</name> 
+          <filter position="10" depend="true" value="category:pantalon" operator="AND"/> 
+          <category> 
+            <name id="303779443-174-620309779">Jeans</name> 
+            <filter position="10" depend="true" value="category:jean" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="689804019-175-664067579">Pantacourts</name> 
+            <filter position="10" depend="true" value="category:pantacourt" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="786766242-176-325040585">Shorts</name> 
+            <filter position="10" depend="true" value="category:short" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="429792269-10-258322428">Chemises</name> 
+          <filter position="10" depend="true" value="category:chemise" operator="AND"/> 
+        </category> 
+        <category> 
+          <name id="54986279-20-148177862">Accessoires</name> 
+          <filter position="10" depend="true" value="category:accessoire" operator="AND"/> 
+          <category> 
+            <name id="231323166-21-160910516">Bonnets</name> 
+            <filter position="10" depend="true" value="category:bonnet" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="530129879-22-801494719">Casquettes</name> 
+            <filter position="10" depend="true" value="category:casquette" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="557019085-23-151067247">Ceintures</name> 
+            <filter position="10" depend="true" value="category:ceinture" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="690861958-24-680227821">Echarpes</name> 
+            <filter position="10" depend="true" value="category:echarpe" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="565136464-25-939756630">Lunettes</name> 
+            <filter position="10" depend="true" value="category:lunette" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="935378785-29-335813449">Manteaux</name> 
+          <filter position="10" depend="true" value="category:manteaux" operator="AND"/> 
+          <category> 
+            <name id="943053255-200-760028376">Blousons</name> 
+            <filter position="10" depend="true" value="category:blouson" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="498875221-201-688994302">Vestes</name> 
+            <filter position="10" depend="true" value="category:veste" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="36919093-202-790734469">Parkas</name> 
+            <filter position="10" depend="true" value="category:parka" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="186955399-203-742293310">Imperm&#233;ables</name> 
+            <filter position="10" depend="true" value="category:impermeable" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="75943114-204-694483375">Pardessus</name> 
+            <filter position="10" depend="true" value="category:pardessus" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="701758704-205-701713642">Cabans</name> 
+            <filter position="10" depend="true" value="category:caban" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="23114038-206-576732020">Blazers</name> 
+            <filter position="10" depend="true" value="category:blazer" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="786430284-207-532302693">Doudounes</name> 
+            <filter position="10" depend="true" value="category:doudoune" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="436413982-208-944777647">Jackets</name> 
+            <filter position="10" depend="true" value="category:jacket" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="795105088-31-768271027">Pulls</name> 
+          <filter position="10" depend="true" value="category:pull" operator="AND"/> 
+          <category> 
+            <name id="175433926-209-535362851">Sweats</name> 
+            <filter position="10" depend="true" value="category:sweat" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="300604333-210-668304765">Polaires</name> 
+            <filter position="10" depend="true" value="category:polaire" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="160983461-211-895932143">Pull-overs</name> 
+            <filter position="10" depend="true" value="category:pullover" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="372755501-212-773590677">Maxi pulls</name> 
+            <filter position="10" depend="true" value="category:maxipull" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="695342270-213-911395270">Sous pulls</name> 
+            <filter position="10" depend="true" value="category:sous-pull" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="238429962-214-753231050">Pulls col V</name> 
+            <filter position="10" depend="true" value="category:col v" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="289554249-215-218006482">Pulls col roul&#233;</name> 
+            <filter position="10" depend="true" value="category:col roule" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="174212364-216-216154191">Pulls col rond</name> 
+            <filter position="10" depend="true" value="category:col rond" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="556146698-33-882762243">Sacs</name> 
+          <filter position="10" depend="true" value="category:sac" operator="AND"/> 
+        </category> 
+        <category> 
+          <name id="460539511-34-421768502">Costumes</name> 
+          <filter position="10" depend="true" value="category:costume" operator="AND"/> 
+          <category> 
+            <name id="171053689-217-880513702">Cravates</name> 
+            <filter position="10" depend="true" value="category:cravate" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="830831044-177-426422442">Chaussures</name> 
+          <filter position="10" depend="true" value="category:chaussure" operator="AND"/> 
+          <category> 
+            <name id="182540929-178-693268602">Sneakers</name> 
+            <filter position="10" depend="true" value="category:sneaker" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="706864016-179-789944573">Derbys</name> 
+            <filter position="10" depend="true" value="category:derby" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="259673500-180-34061261">Escarpins</name> 
+            <filter position="10" depend="true" value="category:escarpin" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="742459098-181-569394306">Sandales</name> 
+            <filter position="10" depend="true" value="category:sandale" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="681711304-182-930418454">Sabots</name> 
+            <filter position="10" depend="true" value="category:sabot" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="11307341-183-920456713">Mules</name> 
+            <filter position="10" depend="true" value="category:mule" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="967708465-184-701373298">Tongs</name> 
+            <filter position="10" depend="true" value="category:tong" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="635310875-185-896159595">Baskets</name> 
+            <filter position="10" depend="true" value="category:basket" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="350447984-186-431930384">Bottes</name> 
+            <filter position="10" depend="true" value="category:botte" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="531304342-187-885485107">Boots</name> 
+            <filter position="10" depend="true" value="category:boots" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="721930246-188-313255430">Mocassins</name> 
+            <filter position="10" depend="true" value="category:mocassin" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="786538579-189-184801549">Chaussures de sport</name> 
+            <filter position="10" depend="true" value="category:chaussures de sport" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="262975188-190-163002607">Bottines</name> 
+            <filter position="10" depend="true" value="category:bottine" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="912226328-191-24212466">Charentaises</name> 
+            <filter position="10" depend="true" value="category:charentaise" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="520663130-192-190634458">Chaussons</name> 
+            <filter position="10" depend="true" value="category:chausson" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="543631665-193-21274999">Sous-v&#234;tements</name> 
+          <filter position="10" depend="true" value="category:lingerie" operator="AND"/> 
+          <category> 
+            <name id="531046746-194-167449637">Slips</name> 
+            <filter position="10" depend="true" value="category:slip" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="816694975-195-245831347">Cale&#231;ons</name> 
+            <filter position="10" depend="true" value="category:calecon" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="144192511-196-667914275">Boxers</name> 
+            <filter position="10" depend="true" value="category:boxer" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="993466328-198-178513568">Shortys</name> 
+            <filter position="10" depend="true" value="category:shorty" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="155384640-199-565503881">Chaussettes</name> 
+            <filter position="10" depend="true" value="category:chaussette" operator="AND"/> 
+          </category> 
+        </category> 
+      </category> 
+      <category> 
+        <name id="33165607-4-422364981">Enfant</name> 
+        <filter position="2" depend="true" value="gender:enfant" operator="AND"/> 
+        <category> 
+          <name id="278109649-3971-205570444">Robes</name> 
+          <filter position="10" depend="true" value="category:robe" operator="AND"/> 
+        </category> 
+        <category> 
+          <name id="609505178-3982-19499771">Chaussures</name> 
+          <filter position="10" depend="true" value="category:chaussure" operator="AND"/> 
+          <category> 
+            <name id="590943156-3984-615657933">Sandales</name> 
+            <filter position="10" depend="true" value="category:sandale" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="591248682-3991-928792900">Baskets</name> 
+            <filter position="10" depend="true" value="category:basket" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="479602700-3992-360456765">Bottes</name> 
+            <filter position="10" depend="true" value="category:botte" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="950697272-3994-420668852">Ballerines</name> 
+            <filter position="10" depend="true" value="category:ballerine" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="815385717-3999-71641122">Botillons</name> 
+            <filter position="10" depend="true" value="category:botillon" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="123836033-4002-77016564">Tennis</name> 
+            <filter position="10" depend="true" value="category:tennis" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="295653516-4008-74185246">Sous-v&#234;tements</name> 
+          <filter position="10" depend="true" value="category:lingerie" operator="AND"/> 
+          <category> 
+            <name id="31134871-4009-592971980">Chaussettes</name> 
+            <filter position="10" depend="true" value="category:chaussette" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="970285442-4015-171766105">Collants</name> 
+            <filter position="10" depend="true" value="category:chaussure" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="544101645-4023-30618093">Culotte</name> 
+            <filter position="10" depend="true" value="category:culotte" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="695739407-4024-717584186">Slip</name> 
+            <filter position="10" depend="true" value="category:slip" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="280195440-4026-291687956">Maillot de corp</name> 
+            <filter position="10" depend="true" value="category:maillot de corp" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="633926402-4033-396365122">Pantalons</name> 
+          <filter position="10" depend="true" value="category:pantalon" operator="AND"/> 
+          <category> 
+            <name id="38126867-4034-847232158">Pantacourts</name> 
+            <filter position="10" depend="true" value="category:pantacourt" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="533182502-4040-910598860">Salopettes</name> 
+            <filter position="10" depend="true" value="category:salopette" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="894934296-4041-596206921">Shorts</name> 
+            <filter position="10" depend="true" value="category:short" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="614567437-4043-946185308">Jeans</name> 
+            <filter position="10" depend="true" value="category:jean" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="523602014-4053-658841990">Accessoires</name> 
+          <filter position="10" depend="true" value="category:accessoire" operator="AND"/> 
+          <category> 
+            <name id="46859060-4054-983620589">Bandana</name> 
+            <filter position="10" depend="true" value="category:bandana" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="444888552-4055-195631113">Bonnet</name> 
+            <filter position="10" depend="true" value="category:bonnet" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="453296267-4060-882388632">Casquette</name> 
+            <filter position="10" depend="true" value="category:casquette" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="570896329-4061-897898670">Ceintures</name> 
+            <filter position="10" depend="true" value="category:ceinture" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="473255328-4062-59341944">Chapeaux</name> 
+            <filter position="10" depend="true" value="category:chapeau" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="934551799-4063-114067821">Echarpe</name> 
+            <filter position="10" depend="true" value="category:echarpe" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="418114611-4064-865232160">Lunettes de soleil</name> 
+            <filter position="10" depend="true" value="category:lunette" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="599970747-4065-5185645">Gants</name> 
+            <filter position="10" depend="true" value="category:gant" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="636338060-4066-822999613">Foulard</name> 
+            <filter position="10" depend="false" value="category:foulard" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="102992364-4073-251143261">Fichu</name> 
+            <filter position="10" depend="true" value="category:fichu" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="286822095-4081-414113280">Bob</name> 
+            <filter position="10" depend="true" value="category:bob" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="116085288-4083-902577970">B&#233;ret</name> 
+            <filter position="10" depend="true" value="category:beret" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="224731564-4084-925379942">Manteaux</name> 
+          <filter position="10" depend="true" value="category:manteaux" operator="AND"/> 
+          <category> 
+            <name id="626019559-4085-136658975">Blousons</name> 
+            <filter position="10" depend="true" value="category:blouson" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="765552489-4086-359047940">Vestes</name> 
+            <filter position="10" depend="true" value="category:veste" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="669922463-4093-284504576">Doudounes</name> 
+            <filter position="10" depend="true" value="category:doudoune" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="389391130-4097-608921124">Pulls</name> 
+          <filter position="10" depend="true" value="category:pull" operator="AND"/> 
+          <category> 
+            <name id="174838042-4098-179335965">Sweats</name> 
+            <filter position="10" depend="true" value="category:sweat" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="937443109-4099-935195252">Polaires</name> 
+            <filter position="10" depend="true" value="category:polaire" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="952674743-4100-741129258">Pull-overs</name> 
+            <filter position="10" depend="true" value="category:pullover" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="947816367-4102-288472771">Sous pulls</name> 
+            <filter position="10" depend="true" value="category:sous-pull" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="164668970-4126-666247860">Jupe</name> 
+          <filter position="10" depend="true" value="category:jupe" operator="AND"/> 
+        </category> 
+        <category> 
+          <name id="49636080-4136-120484670">Gilets</name> 
+          <filter position="10" depend="true" value="category:gilet" operator="AND"/> 
+          <category> 
+            <name id="285357927-4137-209626980">Bol&#233;ros</name> 
+            <filter position="10" depend="true" value="category:bolero" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="640432953-4138-239547680">Jaquettes</name> 
+            <filter position="10" depend="true" value="category:jaquette" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="485037796-4139-976212824">Cardigans</name> 
+            <filter position="10" depend="true" value="category:cardigan" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="950422051-4144-830075427">Tops</name> 
+          <filter position="10" depend="true" value="category:top" operator="AND"/> 
+          <category> 
+            <name id="546681303-4145-140558768">T-shirts</name> 
+            <filter position="10" depend="true" value="category:tshirt" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="63969593-4146-511540885">Polos</name> 
+            <filter position="10" depend="true" value="category:polo" operator="AND"/> 
+          </category> 
+          <category> 
+            <name id="420309137-4148-577685498">Marini&#232;re</name> 
+            <filter position="10" depend="true" value="category:mariniere" operator="AND"/> 
+          </category> 
+        </category> 
+        <category> 
+          <name id="207499674-4149-14469549">Chemises</name> 
+          <filter position="10" depend="true" value="category:chemise" operator="AND"/> 
+        </category> 
+      </category> 
+    </category> 
+  </category> 
+</categories>
