@@ -53,6 +53,11 @@ task :install => :gemspec do
   system "gem build letsshop-mapper.gemspec"
 end
 
+desc 'Build the gem'
+task :release => :install do
+  system "gem push letsshop-mapper-#{PKGVERSION}.gem"
+end
+
 desc 'Clean Up'
 task :clean do |t|
   FileUtils.rm_rf "doc"

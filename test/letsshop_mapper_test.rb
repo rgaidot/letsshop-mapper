@@ -118,6 +118,16 @@ module LetsShopMapper
         assert_equal "Sandales a talon", lshop.tree.categories.children[1].name
         assert_equal "3605", lshop.tree.categories.children[1].id.split('-')[1]
       end
+      def test_search_special_character
+        lshop = LetsShopMapper::Connection::Base::new("letsshop.dev.happun.com", "82842d494583280b940b208664f34014")
+        lshop.find({:f => "refine:'brand:mes héros préférés'", :start => 0, :nhits => 5})
+        assert_equal "UTF-8", lshop.feed.encoding
+        f =  lshop.feed.entries[0].get_facets_by("brand")
+        assert_equal "mes héros préférés", f[0].title
+        lshop.find({:f => "refine:'brand:levi's'", :start => 0, :nhits => 5})
+        f =  lshop.feed.entries[0].get_facets_by("brand")
+        assert_equal "levi's", f[0].title
+      end
     end
   end
 end
