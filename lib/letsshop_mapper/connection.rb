@@ -31,7 +31,13 @@ module LetsShopMapper
         query << "q=#{CGI.escape(conditions[:q])}" if conditions[:q] != nil
         query << "&start=#{conditions[:start]}" if conditions[:start] != nil
         query << "&nhits=#{conditions[:nhits]}" if conditions[:nhits] != nil
-        query << "&f=#{CGI.escape(conditions[:f].gsub(/(refine:)+(\047)+(.+)(\047)/, '\1"\3"'))}" if conditions[:f] != nil
+        if conditions[:f] != nil
+          refine = ""
+          conditions[:f].split(',').each do |f|
+            refine << f.gsub(/(refine:)+(\047)+(.+)(\047)/, '\1"\3",') 
+          end
+          query << "&f=#{CGI.escape(refine)}"
+        end
         query << "&c=#{CGI.escape(conditions[:c])}" if conditions[:c] != nil
         query << "&sort=#{CGI.escape(conditions[:sort])}" if conditions[:sort] != nil
         begin
