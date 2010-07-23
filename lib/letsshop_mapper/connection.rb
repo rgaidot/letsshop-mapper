@@ -29,6 +29,7 @@ module LetsShopMapper
         uri = "http://#{@server}/search/#{@key}"
         query = "?"
         query << "q=#{CGI.escape(conditions[:q])}" if conditions[:q] != nil
+        query << "&products=#{conditions[:products]}" if conditions[:products] != nil
         query << "&start=#{conditions[:start]}" if conditions[:start] != nil
         query << "&nhits=#{conditions[:nhits]}" if conditions[:nhits] != nil
         if conditions[:f] != nil

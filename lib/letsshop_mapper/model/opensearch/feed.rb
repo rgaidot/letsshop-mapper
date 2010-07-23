@@ -56,9 +56,7 @@ module LetsShopMapper
         
         def get_facets_by(scope)
           results = []
-          @facets.each { |f| 
-            if f.type == scope 
-              then results << f end }
+          @facets.each { |f| if f.type == scope then results << f end }
           return results
         end
         

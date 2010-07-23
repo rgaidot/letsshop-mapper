@@ -7,6 +7,7 @@ module LetsShopMapper
         attr_reader :filter
         attr_reader :role
         attr_reader :selected
+        attr_reader :nhits
 
         attr_reader :feed
         attr_reader :xml
@@ -14,7 +15,7 @@ module LetsShopMapper
         def initialize(facet = nil, feed = nil)
           @feed = feed
           @xml = facet
-          @title, @type, @filter, @role, @selected = nil
+          @title, @type, @filter, @role, @selected, @nhits = nil
           @selected = false
           parse(facet) if facet
         end
@@ -24,6 +25,9 @@ module LetsShopMapper
           @type = facet.attributes.get_attribute("title").value.split(":")[0]   
           @filter = Filter::new(facet.attributes.get_attribute("searchTerms"))
           @role = facet.attributes.get_attribute("role").value
+          if facet.attributes.get_attribute("nhits")
+            @nhits = facet.attributes.get_attribute("nhits").value
+          end
         end
 
         def to_s(localtime = true)
@@ -33,6 +37,7 @@ module LetsShopMapper
           s += "Filter: #{@filter.str_value}\n"
           s += "Role: #{@role}\n"
           s += "Selected: #{@selected}\n"
+          s += "nhits: #{@nhits}\n"
           s += "\n"
         end
       end

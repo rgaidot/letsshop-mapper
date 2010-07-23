@@ -17,13 +17,18 @@ module LetsShopMapper
           assert_equal "0", lshopFeed.startindex
           assert_equal "2", lshopFeed.itemsperpage
           assert_equal "228903", lshopFeed.totalresults
+          f = lshopFeed.get_facets_by("universe")
+          assert_equal "mode", f[0].title
+          assert_equal "universe", f[0].type
+          assert_equal "subset", f[0].role
+          assert_equal "225709", f[0].nhits
           assert_equal "b67ab565e1e0f2661e08845111a2106f", lshopFeed.entries[0].id
           assert_equal "6e0512b7f44299b3e1acb38939cf7d3e", lshopFeed.entries[1].id
           assert_equal "Flirt - Collier en or 750 jaune et diamants", lshopFeed.entries[0].title
           assert_equal "Fauteuil style Louis Philippe en cuir reptile noir", lshopFeed.entries[1].title
           assert_equal "18900.0", lshopFeed.entries[0].price
           assert_equal "15800.0", lshopFeed.entries[1].price
-          f =  lshopFeed.entries[0].get_facets_by("universe")
+          f = lshopFeed.entries[0].get_facets_by("universe")
           assert_equal "mode", f[0].title
           assert_equal "universe", f[0].type
           assert_equal "subset", f[0].role
@@ -120,13 +125,20 @@ module LetsShopMapper
       end
       def test_search_special_character
         lshop = LetsShopMapper::Connection::Base::new("letsshop.dev.happun.com", "82842d494583280b940b208664f34014")
-        lshop.find({:f => "refine:'universe:mode',refine:'gender:enfant',refine:'brand:mes héros préférés'", :start => 0, :nhits => 5})
+        lshop.find({:q => "levi's", :f => "refine:'universe:mode',refine:'gender:enfant',refine:'brand:levi's'", :start => 0, :nhits => 5})
         assert_equal "UTF-8", lshop.feed.encoding
         f =  lshop.feed.entries[0].get_facets_by("brand")
-        assert_equal "mes héros préférés", f[0].title
+        assert_equal "levi's", f[0].title
         lshop.find({:f => "refine:'brand:levi's'", :start => 0, :nhits => 5})
         f =  lshop.feed.entries[0].get_facets_by("brand")
         assert_equal "levi's", f[0].title
+      end
+      def test_search_product
+        lshop = LetsShopMapper::Connection::Base::new("letsshop.dev.happun.com", "82842d494583280b940b208664f34014")
+        lshop.find({:producs => "b67ab565e1e0f2661e08845111a2106f"})
+        assert_equal "UTF-8", lshop.feed.encoding
+        assert_equal "b67ab565e1e0f2661e08845111a2106f", lshop.feed.entries[0].id
+        assert_equal "Flirt - Collier en or 750 jaune et diamants", lshop.feed.entries[0].title
       end
     end
   end
