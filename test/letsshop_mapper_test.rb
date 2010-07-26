@@ -32,7 +32,7 @@ module LetsShopMapper
           assert_equal "mode", f[0].title
           assert_equal "universe", f[0].type
           assert_equal "subset", f[0].role
-          assert_equal "refine:'universe:mode'", f[0].filter.str_value
+          assert_equal "universe:mode", f[0].filter.str_value
           assert_equal false, f[0].selected
         end
       end
@@ -100,15 +100,15 @@ module LetsShopMapper
           next if f !~ /tree*.xml$/
           puts "Checking #{f}"
           str = File::read(FIXTURESDIR + '/' + f)
-          lshopFeed = LetsShopMapper::Model::Tree::Tree::new(str)
-          assert_equal "Femme", lshopFeed.categories.children[0].children[0].name
-          assert_equal "2", lshopFeed.categories.children[0].children[0].id.split('-')[1]
-          assert_equal "Enfant", lshopFeed.categories.children[0].children[2].name
-          assert_equal "4", lshopFeed.categories.children[0].children[2].id.split('-')[1]
-          assert_equal "Manteaux", lshopFeed.categories.children[0].children[2].children[5].name
-          assert_equal "4084", lshopFeed.categories.children[0].children[2].children[5].id.split('-')[1]
-          assert_equal "Accessoires", lshopFeed.categories.children[0].children[0].children[4].name
-          assert_equal "11", lshopFeed.categories.children[0].children[0].children[4].id.split('-')[1]
+          lshopTree = LetsShopMapper::Model::Tree::Tree::new(str)
+          assert_equal "Femme", lshopTree.categories.children[0].children[0].name
+          assert_equal "2", lshopTree.categories.children[0].children[0].id.split('-')[1]
+          assert_equal "Enfant", lshopTree.categories.children[0].children[2].name
+          assert_equal "4", lshopTree.categories.children[0].children[2].id.split('-')[1]
+          assert_equal "Manteaux", lshopTree.categories.children[0].children[2].children[5].name
+          assert_equal "4084", lshopTree.categories.children[0].children[2].children[5].id.split('-')[1]
+          assert_equal "Accessoires", lshopTree.categories.children[0].children[0].children[4].name
+          assert_equal "11", lshopTree.categories.children[0].children[0].children[4].id.split('-')[1]
         end
       end
       def test_tree
@@ -127,6 +127,8 @@ module LetsShopMapper
         lshop = LetsShopMapper::Connection::Base::new("letsshop.dev.happun.com", "82842d494583280b940b208664f34014")
         lshop.find({:q => "levi's", :f => "refine:'universe:mode',refine:'gender:enfant',refine:'brand:levi's'", :start => 0, :nhits => 5})
         assert_equal "UTF-8", lshop.feed.encoding
+        ff =  lshop.feed.get_facets_by("brand")
+        assert_equal true, lshop.feed.facets[0].selected
         f =  lshop.feed.entries[0].get_facets_by("brand")
         assert_equal "levi's", f[0].title
         lshop.find({:f => "refine:'brand:levi's'", :start => 0, :nhits => 5})
@@ -139,6 +141,18 @@ module LetsShopMapper
         assert_equal "UTF-8", lshop.feed.encoding
         assert_equal "b67ab565e1e0f2661e08845111a2106f", lshop.feed.entries[0].id
         assert_equal "Flirt - Collier en or 750 jaune et diamants", lshop.feed.entries[0].title
+      end
+      def test_tree_filters
+        Dir.foreach(FIXTURESDIR) do |f|
+          next if f !~ /tree*.xml$/
+          puts "Checking #{f}"
+          str = File::read(FIXTURESDIR + '/' + f)
+          lshopTree = LetsShopMapper::Model::Tree::Tree::new(str)
+          assert_equal "Femme", lshopTree.categories.children[0].children[0].name
+          assert_equal "2", lshopTree.categories.children[0].children[0].id.split('-')[1]
+          assert_equal "gender", lshopTree.categories.children[0].children[0].filters[0].key
+          assert_equal "femme", lshopTree.categories.children[0].children[0].filters[0].value
+        end
       end
     end
   end

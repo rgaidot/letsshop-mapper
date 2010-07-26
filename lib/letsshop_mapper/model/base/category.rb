@@ -6,16 +6,20 @@ module LetsShopMapper
         attr_accessor :id
         attr_accessor :name
         attr_reader :children
+        attr_reader :filters
 
         def initialize()
           @id, @name = nil
           @children = []
+          @filters = []
         end
         def recurse(category, par = nil)
           category.each_child_element do |child|
             if child.name == "category"
               chl = add_category(child)
               par.children << chl
+            elsif child.name == "filter"
+              par.filters << Filter::new(child.attributes.get_attribute("value"))
             end
             recurse(child, chl)
           end

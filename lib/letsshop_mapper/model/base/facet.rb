@@ -23,10 +23,13 @@ module LetsShopMapper
         def parse(facet)
           @title = facet.attributes.get_attribute("title").value.split(":")[1]
           @type = facet.attributes.get_attribute("title").value.split(":")[0]   
-          @filter = Filter::new(facet.attributes.get_attribute("searchTerms"))
+          @filter = Filter::new(facet.attributes.get_attribute("title"))
           @role = facet.attributes.get_attribute("role").value
           if facet.attributes.get_attribute("nhits")
             @nhits = facet.attributes.get_attribute("nhits").value
+          end
+          if facet.attributes.get_attribute("selected")
+            @selected = LetsShopMapper.Boolean(facet.attributes.get_attribute("selected").value)
           end
         end
 
