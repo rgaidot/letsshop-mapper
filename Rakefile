@@ -39,7 +39,7 @@ task :gemspec do
     s.require_path = 'lib'
     s.has_rdoc = true
     s.extra_rdoc_files = ['README.rdoc', 'LICENSE']
-    s.rdoc_options << '--main --inline-source --line-numbers' << 'README.rdoc'
+    s.rdoc_options << '--line-numbers' << '--inline-source' << 'README.rdoc'
     s.files = PKGFILES
     s.description = "Let's Shop Mapper is a Ruby library that allows to search and parse on Let's Shop Service."
   end
@@ -70,7 +70,7 @@ Rake::RDocTask.new(:rdoc) do |rdoc|
   rdoc.title    = "Let's Shop Mapper"
   rdoc.options << '--line-numbers' << '--inline-source' 
   rdoc.options << '--charset' << 'utf-8'
-  rdoc.options << '--main' << 'README.rdoc'
+  rdoc.options << '--line-numbers' << '--inline-source' << 'README.rdoc'
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
 end

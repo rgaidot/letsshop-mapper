@@ -1,0 +1,1 @@
+require 'letsshop_mapper'
