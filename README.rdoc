@@ -6,7 +6,7 @@ Let's Shop Mapper is a Ruby library that allows to search and parse on Let's Sho
 
 == Install
 
-gem install letsshop-mapper
+gem install letsshop_mapper
 
 == Examples
 

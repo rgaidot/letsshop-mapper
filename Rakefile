@@ -7,11 +7,11 @@ require 'find'
 
 require File.expand_path('../lib/letsshop_mapper/version', __FILE__)
 
-PKGNAME = 'letsshop-mapper'
+PKGNAME = 'letsshop_mapper'
 PKGVERSION = version = File.read("LETSSHOP_MAPPER_VERSION").strip
 
 PKGFILES = [ 'README.rdoc', 'LICENSE', 'Rakefile' ]
-Find.find('lib/', 'test/', 'rails/') do |f|
+Find.find('init.rb', 'lib/', 'test/', 'rails/') do |f|
   if FileTest.directory?(f) and f =~ /\.svn/
     Find.prune
   else
@@ -35,7 +35,6 @@ task :gemspec do
     s.name = PKGNAME
     s.rubyforge_project = PKGNAME
     s.version = PKGVERSION
-    s.requirements << 'none'
     s.require_path = 'lib'
     s.has_rdoc = true
     s.extra_rdoc_files = ['README.rdoc', 'LICENSE']
@@ -50,12 +49,12 @@ end
 
 desc 'Build the gem'
 task :install => :gemspec do
-  system "gem build letsshop-mapper.gemspec"
+  system "gem build letsshop_mapper.gemspec"
 end
 
 desc 'Build the gem'
 task :release => :install do
-  system "gem push letsshop-mapper-#{PKGVERSION}.gem"
+  system "gem push letsshop_mapper-#{PKGVERSION}.gem"
 end
 
 desc 'Clean Up'
