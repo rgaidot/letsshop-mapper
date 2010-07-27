@@ -1,1 +1,1 @@
-require 'letsshop_mapper'
+require File.join(File.dirname(__FILE__),'../init.rb')
