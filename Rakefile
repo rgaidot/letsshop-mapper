@@ -11,7 +11,7 @@ PKGNAME = 'letsshop-mapper'
 PKGVERSION = version = File.read("LETSSHOP_MAPPER_VERSION").strip
 
 PKGFILES = [ 'README.rdoc', 'LICENSE', 'Rakefile' ]
-Find.find('lib/', 'test/') do |f|
+Find.find('lib/', 'test/', 'rails/') do |f|
   if FileTest.directory?(f) and f =~ /\.svn/
     Find.prune
   else
