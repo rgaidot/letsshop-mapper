@@ -135,6 +135,20 @@ module LetsShopMapper
         f =  lshop.feed.entries[0].get_facets_by("brand")
         assert_equal "levi's", f[0].title
       end
+      def test_search_refine_with_operator_supplier
+        lshop = LetsShopMapper::Connection::Base::new("letsshop.dev.happun.com", "82842d494583280b940b208664f34014")
+        lshop.find({:f => "refine:('supplier:galeries lafayette' OR 'supplier:brandalley')", :start => 0, :nhits => 5})
+        assert_equal "UTF-8", lshop.feed.encoding
+        f =  lshop.feed.get_facets_by("supplier")
+        assert_equal "brandalley", f[0].title
+        assert_equal "galeries lafayette", f[1].title
+        lshop.find({:f => "refine:('supplier:brandalley' AND 'brand:morgan')", :start => 0, :nhits => 5})
+        assert_equal "UTF-8", lshop.feed.encoding
+        f =  lshop.feed.get_facets_by("supplier")
+        assert_equal "brandalley", f[0].title
+        f =  lshop.feed.get_facets_by("brand")
+        assert_equal "morgan", f[0].title
+      end
       def test_search_product
         lshop = LetsShopMapper::Connection::Base::new("letsshop.dev.happun.com", "82842d494583280b940b208664f34014")
         lshop.find({:producs => "b67ab565e1e0f2661e08845111a2106f"})

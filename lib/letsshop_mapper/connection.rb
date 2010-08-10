@@ -34,8 +34,10 @@ module LetsShopMapper
         query << "&nhits=#{conditions[:nhits]}" if conditions[:nhits] != nil
         if conditions[:f] != nil
           refine = ""
-          conditions[:f].split(',').each do |f|
-            refine << f.gsub(/(refine:)+(\047)+(.+)(\047)/, '\1"\3",') 
+          refine_splited = conditions[:f].split(',')
+          refine_splited.each do |f|
+            refine << f.gsub(/(refine:||refine:\()+(\047)(.+)(\047)/, '\1"\3"').gsub(/(\047) (OR||AND) (\047)/, '" \2 "')
+            refine << "," unless f == refine_splited.last
           end
           query << "&f=#{CGI.escape(refine)}"
         end
