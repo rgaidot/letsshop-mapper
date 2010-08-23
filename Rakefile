@@ -54,6 +54,8 @@ end
 
 desc 'Build the gem'
 task :release => :install do
+  system "git commit -m \"#{PKGVERSION}\""
+  system "git push origin master"
   system "gem push letsshop_mapper-#{PKGVERSION}.gem"
 end
 

@@ -3,22 +3,21 @@ module LetsShopMapper
     module Tree
       class Tree
         attr_reader :categories
-        
         attr_reader :xml
 
         def initialize(str = nil)
           parse(str) if str
         end
+        
         def parse(str)
-          doc = REXML::Document.new(str)
-          @xml = doc.root
-          if doc.root.elements['/categories']
-            doc.root.each_element('/categories/category') do |c|
+          @xml = Nokogiri::XML(str)
+          if @xml.at('/categories')
+            @xml.xpath('/categories/category').each do |c|
               @categories = Base::Category::new
               @categories.recurse(c, @categories)
             end
-          elsif doc.root.elements['/category']
-            doc.root.each_element('/category') do |c|
+          elsif @xml.at('/category')
+            @xml.xpath('/category').each do |c|
               @categories = Base::Category::new
               @categories.recurse(c, @categories)
             end            
@@ -26,6 +25,7 @@ module LetsShopMapper
             raise LetsShopMapper::Error::UnknownFeedTypeException::new
           end
         end
+        
         def to_s(localtime = true)
           s = @categories.to_s(localtime)
         end

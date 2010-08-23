@@ -12,11 +12,13 @@ module LetsShopMapper
           @depend = false
           parse(filtr) if filtr
         end
+
         def parse(filtr)
-          @str_value = filtr.value
-          @key = filtr.value.split(":")[0]
-          @value = filtr.value.split(":")[1]
+          @str_value = filtr
+          @key = filtr.split(":")[0]
+          @value = filtr.split(":")[1]
         end
+
         def to_s(localtime = true)
           s  = ''
           s += "Key: #{@key}\n"

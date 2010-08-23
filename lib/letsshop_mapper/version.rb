@@ -1,9 +1,9 @@
 module LetsShopMapper
   module Version
-    MAJOR = 0
-    MINOR = 9
+    MAJOR = 1
+    MINOR = 0
     TINY  = 0
-    BUILD = "beta"
+    BUILD = ""
     STRING = [MAJOR, MINOR, TINY, BUILD].join('.')
   end
 end

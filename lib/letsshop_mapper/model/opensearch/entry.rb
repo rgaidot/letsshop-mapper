@@ -13,46 +13,31 @@ module LetsShopMapper
         attr_reader :thumb
         attr_reader :supplier
         attr_reader :facets
-
-        attr_reader :feed
         attr_reader :xml
 
-        def initialize(entry = nil, feed = nil)
-          @feed = feed
+        def initialize(entry = nil)
           @xml = entry
           @id, @link, @title, @description, @price, @thumb, @supplier = nil
           @facets = []
           parse(entry) if entry
         end
 
-        # parse entry
         def parse(entry)
-          @id = entry.elements["id"].text
-          if (e = entry.elements['link'])
-            @link = e.attribute('href').value
-          end
-          if (e = entry.elements['title']) && e.text
-            @title = e.text
-          end
-          if (e = entry.elements['description']) && e.text
-            @description = e.text
-          end
-          if (e = entry.elements['letsshop/thumb'])
-            @thumb = e.text
-          end
-          if (e = entry.elements['letsshop/price']) && e.text
-            @price = e.text
-            @currency = e.attributes.get_attribute("currency").value
-            @discount = e.attributes.get_attribute("discount").value
-            @older_price = e.attributes.get_attribute("older").value
-          end
-          entry.each_element('Query') do |f|
-            if !f.attributes.get_attribute("title").value.index("supplier:").nil?
-              @supplier =  f.attributes.get_attribute("title").value.gsub("supplier:","")
+          @id = entry.at('id').text
+          @link = entry.at('link')['href']
+          @title = entry.at('title').text
+          @description = entry.at('description').text
+          @thumb =entry.at('letsshop/thumb').text
+          @price = entry.at('letsshop/price').text
+          @currency = entry.at('letsshop/price')['currency']
+          @discount = entry.at('letsshop/price')['discount']
+          @older_price = entry.at('letsshop/price')['older']
+          
+          entry.children.search('Query').each do |f|
+            @facets << Base::Facet::new(f)
+            if !f['title'].index("supplier:").nil?
+              @supplier = f['title'].gsub("supplier:","")
             end
-          end
-          entry.each_element('Query') do |e|
-             @facets << Base::Facet::new(e, self)
           end
         end
 

@@ -1,9 +1,8 @@
 require 'rubygems'
 require 'tempfile'
-require 'rexml/document'
+require 'nokogiri'
 
 module LetsShopMapper
-  autoload :REXML, "letsshop_mapper/patch/rexml"
   autoload :Version, "letsshop_mapper/version"
   autoload :Connection, "letsshop_mapper/connection"
   autoload :Error, "letsshop_mapper/exceptions"

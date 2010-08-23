@@ -8,9 +8,7 @@ module LetsShopMapper
         attr_reader :startindex
         attr_reader :itemsperpage
         attr_reader :totalresults
-        
         attr_reader :facets
-
         attr_reader :xml
         attr_reader :encoding
 
@@ -22,32 +20,21 @@ module LetsShopMapper
         end
 
         def parse(str)
-          doc = REXML::Document.new(str)
-          @xml = doc.root
-          @encoding = doc.encoding
-          if doc.root.elements['/feed']
-            if (e = doc.root.elements['/feed/title']) && e.text
-              @title = e.text
-            end
-            if (e = doc.root.elements['/feed/link'])
-              @link = e.attribute('href').value
-            end
-            if (e = doc.root.elements['/feed/startIndex']) && e.text
-              @startindex = e.text
-            end
-            if (e = doc.root.elements['/feed/itemsPerPage']) && e.text
-              @itemsperpage = e.text
-            end
-            if (e = doc.root.elements['/feed/totalResults']) && e.text
-              @totalresults = e.text
-            end
+          @xml = Nokogiri::XML(str)
+          @encoding = @xml.encoding
+          if @xml.at('/xmlns:feed')
+            @title = @xml.at('/xmlns:feed/xmlns:title').text
+            @link = @xml.at('/xmlns:feed/xmlns:link')['href']
+            @startindex =  @xml.at('/xmlns:feed/xmlns:startIndex').text
+            @itemsperpage =  @xml.at('/xmlns:feed/xmlns:itemsPerPage').text
+            @totalresults =  @xml.at('/xmlns:feed/xmlns:totalResults').text
             # Facets
-            doc.root.each_element_with_attribute('role', 'subset') do |f|
-              @facets << Base::Facet::new(f, self)
+            @xml.xpath('/xmlns:feed/xmlns:Query[@role="subset"]').each do |f|
+               @facets << Base::Facet::new(f)
             end
             # Entries
-            doc.root.each_element('/feed/entry') do |e|
-               @entries << Entry::new(e, self)
+            @xml.xpath('/xmlns:feed/xmlns:entry').each do |e|
+               @entries << Entry::new(e)
             end
           else
             raise LetsShopMapper::Error::UnknownFeedTypeException::new

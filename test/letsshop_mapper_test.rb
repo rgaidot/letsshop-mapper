@@ -111,6 +111,13 @@ module LetsShopMapper
           assert_equal "11", lshopTree.categories.children[0].children[0].children[4].id.split('-')[1]
         end
       end
+      def test_tree_perf
+        config = YAML.load_file('test/letsshop.yml')['development']
+        lshop = LetsShopMapper::Connection::Base::new(config["server"], config["key"])
+        tstart = Time.now.to_f
+        lshop.get_tree()
+        puts "Time elapsed: #{Time.now.to_f-tstart}"
+      end
       def test_tree
         config = YAML.load_file('test/letsshop.yml')['development']
         lshop = LetsShopMapper::Connection::Base::new(config["server"], config["key"])

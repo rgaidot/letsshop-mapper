@@ -8,12 +8,9 @@ module LetsShopMapper
         attr_reader :role
         attr_reader :selected
         attr_reader :nhits
-
-        attr_reader :feed
         attr_reader :xml
 
-        def initialize(facet = nil, feed = nil)
-          @feed = feed
+        def initialize(facet = nil)
           @xml = facet
           @title, @type, @filter, @role, @selected, @nhits = nil
           @selected = false
@@ -21,15 +18,15 @@ module LetsShopMapper
         end
 
         def parse(facet)
-          @title = facet.attributes.get_attribute("title").value.split(":")[1]
-          @type = facet.attributes.get_attribute("title").value.split(":")[0]   
-          @filter = Filter::new(facet.attributes.get_attribute("title"))
-          @role = facet.attributes.get_attribute("role").value
-          if facet.attributes.get_attribute("nhits")
-            @nhits = facet.attributes.get_attribute("nhits").value
+          @title = facet['title'].split(":")[1]
+          @type = facet['title'].split(":")[0]
+          @filter = Filter::new(facet['title'])
+          @role = facet['role']
+          if facet['nhits']
+            @nhits = facet['nhits']
           end
-          if facet.attributes.get_attribute("selected")
-            @selected = LetsShopMapper.Boolean(facet.attributes.get_attribute("selected").value)
+          if facet['selected']
+            @selected = LetsShopMapper.Boolean(facet['selected'])
           end
         end
 

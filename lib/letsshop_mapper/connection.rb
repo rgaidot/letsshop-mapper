@@ -8,7 +8,6 @@ module LetsShopMapper
       attr_reader :server
       attr_reader :key
       attr_reader :response
-
       attr_reader :feed
       attr_reader :tree
       
@@ -16,6 +15,7 @@ module LetsShopMapper
         @server = server
         @key = key
       end
+      
       def connect_and_get()
         uri = "http://#{@server}/search/#{@key}"
         begin
@@ -25,6 +25,7 @@ module LetsShopMapper
           raise LetsShopMapper::RequestBaseSearchException::new
         end
       end
+      
       def find(conditions = {})
         uri = "http://#{@server}/search/#{@key}"
         query = "?"
@@ -50,6 +51,7 @@ module LetsShopMapper
           raise LetsShopMapper::Error::RequestBaseSearchException::new
         end
       end
+      
       def get_tree(category = nil)
         uri = "http://#{@server}/tree/#{@key}"
         id = "#{category}" if category != nil
