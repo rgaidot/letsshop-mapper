@@ -189,6 +189,17 @@ module LetsShopMapper
           assert_equal "brand:achatdesign", lshopSuggest.items[8].filter.str_value
         end
       end
+      def test_suggest_request
+        config = YAML.load_file('test/letsshop.yml')['development']
+        lshop = LetsShopMapper::Connection::Base::new(config["server"], config["key"])
+        lshop.do_suggest("ju")
+        assert_equal "jupe", lshop.suggest.items[0].text
+        assert_equal "category", lshop.suggest.items[0].type
+        assert_equal "category:jupe", lshop.suggest.items[0].filter.str_value
+        assert_equal "junk de luxe", lshop.suggest.items[9].text
+        assert_equal "brand", lshop.suggest.items[9].type
+        assert_equal "brand:junk de luxe", lshop.suggest.items[9].filter.str_value
+      end
     end
   end
 end

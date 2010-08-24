@@ -22,7 +22,7 @@ module LetsShopMapper
         end
         
         def to_s(localtime = true)
-          s = 'dddd'
+          s = ''
           @items.each { |i| s += i.to_s(localtime) }
         end
       end

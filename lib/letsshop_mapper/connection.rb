@@ -10,6 +10,7 @@ module LetsShopMapper
       attr_reader :response
       attr_reader :feed
       attr_reader :tree
+      attr_reader :suggest
       
       def initialize(server = nil, key = nil)
         @server = server
@@ -58,6 +59,16 @@ module LetsShopMapper
         begin
           @response = Net::HTTP.get_response(URI.parse("#{uri}/#{id}"))
           @tree = LetsShopMapper::Model::Tree::Tree::new(@response.body)
+        rescue Exception
+          raise LetsShopMapper::Error::RequestBaseSearchException::new
+        end
+      end
+      
+      def do_suggest(word = nil)
+        uri = "http://#{@server}/suggest/#{@key}"
+        begin
+          @response = Net::HTTP.get_response(URI.parse("#{uri}/?q=#{word}"))
+          @suggest = LetsShopMapper::Model::Suggest::Suggest::new(@response.body)
         rescue Exception
           raise LetsShopMapper::Error::RequestBaseSearchException::new
         end
