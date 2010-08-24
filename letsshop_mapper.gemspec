@@ -2,15 +2,15 @@
 
 Gem::Specification.new do |s|
   s.name = %q{letsshop_mapper}
-  s.version = "1.0.0"
+  s.version = "1.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["happun"]
-  s.date = %q{2010-08-23}
+  s.date = %q{2010-08-25}
   s.description = %q{Let's Shop Mapper is a Ruby library that allows to search and parse on Let's Shop Service.}
   s.email = %q{dev@happun.com}
   s.extra_rdoc_files = ["README.rdoc", "LICENSE"]
-  s.files = ["README.rdoc", "LICENSE", "Rakefile", "init.rb", "lib/", "lib/letsshop_mapper.rb", "lib/letsshop_mapper", "lib/letsshop_mapper/version.rb", "lib/letsshop_mapper/patch", "lib/letsshop_mapper/patch/rexml.rb", "lib/letsshop_mapper/model", "lib/letsshop_mapper/model/tree", "lib/letsshop_mapper/model/tree/tree.rb", "lib/letsshop_mapper/model/opensearch", "lib/letsshop_mapper/model/opensearch/feed.rb", "lib/letsshop_mapper/model/opensearch/entry.rb", "lib/letsshop_mapper/model/base", "lib/letsshop_mapper/model/base/filter.rb", "lib/letsshop_mapper/model/base/facet.rb", "lib/letsshop_mapper/model/base/category.rb", "lib/letsshop_mapper/exceptions.rb", "lib/letsshop_mapper/connection.rb", "test/", "test/test_helper.rb", "test/letsshop_mapper_test.rb", "test/letsshop.yml", "test/fixtures", "rails/", "rails/init.rb"]
+  s.files = ["README.rdoc", "LICENSE", "Rakefile", "init.rb", "lib/", "lib/letsshop_mapper.rb", "lib/letsshop_mapper", "lib/letsshop_mapper/version.rb", "lib/letsshop_mapper/patch", "lib/letsshop_mapper/patch/rexml.rb", "lib/letsshop_mapper/model", "lib/letsshop_mapper/model/tree", "lib/letsshop_mapper/model/tree/tree.rb", "lib/letsshop_mapper/model/suggest", "lib/letsshop_mapper/model/suggest/suggest.rb", "lib/letsshop_mapper/model/suggest/item.rb", "lib/letsshop_mapper/model/opensearch", "lib/letsshop_mapper/model/opensearch/feed.rb", "lib/letsshop_mapper/model/opensearch/entry.rb", "lib/letsshop_mapper/model/base", "lib/letsshop_mapper/model/base/filter.rb", "lib/letsshop_mapper/model/base/facet.rb", "lib/letsshop_mapper/model/base/category.rb", "lib/letsshop_mapper/exceptions.rb", "lib/letsshop_mapper/connection.rb", "test/", "test/test_helper.rb", "test/letsshop_mapper_test.rb", "test/letsshop.yml", "test/fixtures", "rails/", "rails/init.rb"]
   s.homepage = %q{http://github.com/rgaidot/letsshop-mapper}
   s.rdoc_options = ["--line-numbers", "--inline-source", "README.rdoc"]
   s.require_paths = ["lib"]

@@ -5,12 +5,13 @@ module LetsShopMapper
         attr_reader :categories
         attr_reader :xml
 
-        def initialize(str = nil)
-          parse(str) if str
+        def initialize(tree = nil)
+          @categories = []
+          parse(tree) if tree
         end
         
-        def parse(str)
-          @xml = Nokogiri::XML(str)
+        def parse(tree)
+          @xml = Nokogiri::XML(tree)
           if @xml.at('/categories')
             @xml.xpath('/categories/category').each do |c|
               @categories = Base::Category::new

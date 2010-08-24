@@ -78,7 +78,7 @@ module LetsShopMapper
         assert_equal "Search: ", lshop.feed.title
         assert_equal "http://letsshop.dev.happun.com/search/82842d494583280b940b208664f34014", lshop.feed.link
         f =  lshop.feed.entries[0].get_facets_by("category")
-        assert_equal "chaussure", f[0].title
+        assert_equal "botte", f[0].title
         assert_equal "subset", f[0].role
         f =  lshop.feed.entries[0].get_facets_by("universe")
         assert_equal "mode", f[0].title
@@ -90,7 +90,7 @@ module LetsShopMapper
         assert_equal "Search: escarpin  AND noir", lshop.feed.title
         assert_equal "http://letsshop.dev.happun.com/search/82842d494583280b940b208664f34014", lshop.feed.link
         f =  lshop.feed.entries[0].get_facets_by("category")
-        assert_equal "chaussure", f[0].title
+        assert_equal "escarpin", f[0].title
         assert_equal "subset", f[0].role
         f =  lshop.feed.entries[0].get_facets_by("universe")
         assert_equal "mode", f[0].title
@@ -173,6 +173,20 @@ module LetsShopMapper
           assert_equal "2", lshopTree.categories.children[0].children[0].id.split('-')[1]
           assert_equal "gender", lshopTree.categories.children[0].children[0].filters[0].key
           assert_equal "femme", lshopTree.categories.children[0].children[0].filters[0].value
+        end
+      end
+      def test_suggest
+        Dir.foreach(FIXTURESDIR) do |f|
+          next if f !~ /suggest*.xml$/
+          puts "Checking #{f}"
+          str = File::read(FIXTURESDIR + '/' + f)
+          lshopSuggest = LetsShopMapper::Model::Suggest::Suggest::new(str)
+          assert_equal "asos", lshopSuggest.items[0].text
+          assert_equal "supplier", lshopSuggest.items[0].type
+          assert_equal "supplier:asos", lshopSuggest.items[0].filter.str_value
+          assert_equal "achatdesign", lshopSuggest.items[8].text
+          assert_equal "brand", lshopSuggest.items[8].type
+          assert_equal "brand:achatdesign", lshopSuggest.items[8].filter.str_value
         end
       end
     end

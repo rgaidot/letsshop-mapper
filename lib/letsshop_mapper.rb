@@ -19,6 +19,10 @@ module LetsShopMapper
     module Tree
       autoload :Tree, "letsshop_mapper/model/tree/tree"
     end
+    module Suggest
+      autoload :Suggest, "letsshop_mapper/model/suggest/suggest"
+      autoload :Item, "letsshop_mapper/model/suggest/item"
+    end
   end
   def self.Boolean(string)
     return true if string == true || string =~ /^true$/i

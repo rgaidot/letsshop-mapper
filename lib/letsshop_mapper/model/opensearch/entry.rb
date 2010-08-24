@@ -13,10 +13,8 @@ module LetsShopMapper
         attr_reader :thumb
         attr_reader :supplier
         attr_reader :facets
-        attr_reader :xml
 
         def initialize(entry = nil)
-          @xml = entry
           @id, @link, @title, @description, @price, @thumb, @supplier = nil
           @facets = []
           parse(entry) if entry
