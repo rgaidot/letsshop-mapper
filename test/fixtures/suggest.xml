@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suggest xmlns:letsshop="http://letsshop.happun.com/ns/" version="1.0">
+  <letsshop:customer name="Happun"/>
+  <letsshop:appname value="Soldissimode" key="82842d494583280b940b208664f34014"/>
+  <item>
+    <text type="supplier">asos</text>
+    <nhits>30547</nhits>
+    <filter value="supplier:asos"/>
+  </item>
+  <item>
+    <text type="category">accessoire</text>
+    <nhits>14403</nhits>
+    <filter value="category:accessoire"/>
+  </item>
+  <item>
+    <text type="supplier">achatvip</text>
+    <nhits>4954</nhits>
+    <filter value="supplier:achatvip"/>
+  </item>
+  <item>
+    <text type="category">art de la table</text>
+    <nhits>4809</nhits>
+    <filter value="category:art de la table"/>
+  </item>
+  <item>
+    <text type="brand">asos</text>
+    <nhits>3243</nhits>
+    <filter value="brand:asos"/>
+  </item>
+  <item>
+    <text type="brand">amatai</text>
+    <nhits>2397</nhits>
+    <filter value="brand:amatai"/>
+  </item>
+  <item>
+    <text type="supplier">amatai</text>
+    <nhits>2397</nhits>
+    <filter value="supplier:amatai"/>
+  </item>
+  <item>
+    <text type="brand">adidas</text>
+    <nhits>1771</nhits>
+    <filter value="brand:adidas"/>
+  </item>
+  <item>
+    <text type="brand">achatdesign</text>
+    <nhits>1022</nhits>
+    <filter value="brand:achatdesign"/>
+  </item>
+  <item>
+    <text type="supplier">achatdesign</text>
+    <nhits>1022</nhits>
+    <filter value="supplier:achatdesign"/>
+  </item>
+</suggest>
