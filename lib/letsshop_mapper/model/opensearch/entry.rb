@@ -57,6 +57,8 @@ module LetsShopMapper
           s += "Link: #{@link}\n"
           s += "Title: #{@title}\n"
           s += "Description: #{@description}\n"
+          s += "Delivery times: #{@delivery_times}\n"
+          s += "Product condition: #{@product_condition}\n"
           s += "Thumbnail: #{@thumb}\n"
           s += "Price: #{@price} #{@currency}\n"
           s += "Discount: #{@older_price} (#{@discount})\n"
