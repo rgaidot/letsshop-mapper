@@ -13,9 +13,11 @@ module LetsShopMapper
         attr_reader :thumb
         attr_reader :supplier
         attr_reader :facets
+        attr_reader :delivery_times
+        attr_reader :product_condition
 
         def initialize(entry = nil)
-          @id, @link, @title, @description, @price, @thumb, @supplier = nil
+          @id, @link, @title, @description, @price, @thumb, @supplier, @delivery_times, @product_condition = nil
           @facets = []
           parse(entry) if entry
         end
@@ -30,6 +32,8 @@ module LetsShopMapper
           @currency = entry.at('letsshop/price')['currency']
           @discount = entry.at('letsshop/price')['discount']
           @older_price = entry.at('letsshop/price')['older']
+          @delivery_times = entry.at('letsshop/delivery_times').text
+          @product_condition = entry.at('letsshop/product_condition').text
           
           entry.children.search('Query').each do |f|
             @facets << Base::Facet::new(f)
